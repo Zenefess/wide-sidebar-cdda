@@ -1,0 +1,82 @@
+[
+  {
+    "id": "zenfs_complete_status_display",
+    "type": "widget",
+    "style": "layout",
+    "label": "Full status",
+    "arrange": "minimum_columns",
+    "description": "A large <color_yellow>health graph</color>, complete with <color_yellow>health</color> & <color_yellow>wetness meters</color> for all major body parts, <color_yellow>body graphs</color> for status, encumbrance & temperature, and all of the <color_yellow>character stats</color>.",
+    "widgets": [ "zenfs_titled_body_graph", "zenfs_hp_bars_and_stats" ]
+  },
+  {
+    "id": "zenfs_complete_status_display_alt",
+    "type": "widget",
+    "style": "layout",
+    "label": "Full status (alt)",
+    "arrange": "minimum_columns",
+    "description": "A large <color_yellow>health graph</color>, complete with <color_yellow>health</color> & <color_yellow>wetness meters</color> for all major body parts, <color_yellow>body graphs</color> for status, encumbrance & temperature, and all of the <color_yellow>character stats</color>. Alternate version; <color_green>stamina</color> is located under the limb meters, and <color_green>pain</color> is located under the small body graphs.",
+    "widgets": [ "zenfs_titled_body_graph", "zenfs_hp_bars_and_stats_alt" ],
+    "flags": [ "W_DISABLED_BY_DEFAULT" ]
+  },
+  {
+    "id": "zenfs_weapon_ammo_white_label",
+    "type": "widget",
+    "style": "layout",
+    "label": "Weapon information",
+    "arrange": "rows",
+    "widgets": [ "zenfs_wield_white_label" ]
+  },
+  {
+    "id": "zenfs_ma_buffs_white_label",
+    "type": "widget",
+    "style": "layout",
+    "label": "Martial arts & buffs",
+    "description": "Shows current martial arts style and <color_yellow>buffs</color>.",
+    "arrange": "rows",
+    "widgets": [ "zenfs_ma_white_label", "ma_buff_entries" ]
+  },
+  {
+	"id": "zenfs_environment_safe",
+	"type": "widget",
+	"style": "layout",
+    "separator": ": ",
+	"label": "Environment & SAFE",
+	"description": "All environment information and safe mode indicator.",
+	"arrange": "rows",
+	"widgets": [ "zenfs_sun_with_moon", "zenfs_wind_light_weather", "zenfs_temp_date_time_safe", "zenfs_place_radiation" ]
+  },
+  {
+    "id": "zenfs_sundial_moon_overmap_environment",
+    "type": "widget",
+    "style": "layout",
+    "label": "Sun/Moon/Overmap/Env",
+    "arrange": "minimum_columns",
+    "widgets": [ "sundial_over_overmap", "moon_over_environment" ],
+    "flags": [ "W_DISABLED_BY_DEFAULT" ]
+  },
+  {
+    "id": "zenfs_thick_sidebar",
+    "type": "widget",
+    "style": "sidebar",
+    "label": "ZenFS's thick",
+    "description": "Thick sidebar for wide displays.",
+    "separator": " ",
+    "padding": 1,
+    "width": 66,
+    "widgets": [
+      "zenfs_complete_status_display",
+	  "zenfs_complete_status_display_alt",
+      "zenfs_spacer",
+	  "zenfs_weapon_ammo_white_label",
+	  "zenfs_ma_buffs_white_label",
+      "zenfs_spacer",
+	  "zenfs_environment_safe",
+	  "zenfs_sundial_moon_overmap_environment",
+      "zenfs_spacer_disabled",
+      "vehicle_acf_label_layout_columns",
+	  "compass_all_layout_alt",
+      "compass_all_layout",
+      "zenfs_spacer_disabled"
+    ]
+  }
+]

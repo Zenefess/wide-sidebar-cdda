@@ -1,0 +1,58 @@
+[
+  {
+	"id": "zenfs_mood_focus_speed_sound",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "rows",
+	"width": 8,
+	"widgets": [ "mood_desc_label", "focus_num", "speed_num", "sound_num" ]
+  },
+  {
+    "id": "zenfs_stamina_label",
+    "type": "widget",
+    "style": "text",
+    "string": "           <color_white>Stamina</color>",
+    "width": 29,
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_stamina_bar_12",
+    "type": "widget",
+    "copy-from": "stamina_widget",
+    "label": "Stamina",
+    "style": "graph",
+    "width": 12,
+    "symbols": "·−=≡≣"
+  },
+  {
+    "id": "zenfs_stamina_bar_29",
+    "type": "widget",
+    "copy-from": "stamina_widget",
+    "style": "graph",
+    "width": 29,
+    "symbols": "·−=≡≣",
+	"flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_weariness_bar_10",
+    "type": "widget",
+    "label": "Weariness",
+    "var": "weariness_level",
+    "style": "graph",
+    "fill": "pool",
+    "width": 10,
+    "symbols": "·−=≡≣",
+    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ]
+  },
+  {
+    "id": "zenfs_fatigue_bar_12",
+    "type": "widget",
+    "label": "Fatigue",
+    "var": "fatigue",
+    "style": "graph",
+    "fill": "pool",
+    "width": 12,
+    "symbols": "·−=≡≣",
+    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ]
+  }
+]

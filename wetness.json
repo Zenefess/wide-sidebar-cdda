@@ -1,0 +1,54 @@
+[
+  {
+    "id": "zenfs_wetness_graph",
+    "type": "widget",
+    "style": "graph",
+    "width": 1,
+    "symbols": "·−=≡≣",
+    "fill": "bucket",
+    "colors": [ "c_dark_gray", "c_blue", "c_light_blue", "c_cyan", "c_white" ],
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_wetness_head",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "head",
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_torso",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "torso",
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_larm",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "arm_l",
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_rarm",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "arm_r",
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_lleg",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "leg_l",
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_rleg",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "leg_r",
+    "copy-from": "zenfs_wetness_graph"
+  }
+]

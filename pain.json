@@ -1,0 +1,34 @@
+[
+  {
+	"id": "zenfs_pain_label",
+    "type": "widget",
+    "style": "text",
+    "string": "            <color_white>Pain</color>",
+    "width": 29,
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_pain_bar_29",
+    "type": "widget",
+    "var": "pain",
+    "style": "graph",
+    "label": "Pain",
+    "fill": "bucket",
+    "width": 29,
+    "symbols": "·−=≡≣",
+    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ],
+	"flags": [ "W_LABEL_NONE", "W_DISABLED_WHEN_EMPTY" ]
+  },
+  {
+    "id": "zenfs_pain_bar_15",
+    "type": "widget",
+    "var": "pain",
+    "style": "graph",
+    "label": "<color_white>Pain</color>",
+    "fill": "bucket",
+    "width": 15,
+    "symbols": "·−=≡≣",
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ],
+    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ]
+  }
+]

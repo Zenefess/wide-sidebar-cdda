@@ -1,0 +1,234 @@
+[
+  {
+	"id": "zenfs_sun_with_moon",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "minimum_columns",
+	"widgets": [ "zenfs_sundial_label_text", "zenfs_sundial_desc_no_label", "zenfs_moon_phase_text" ]
+  },
+  {
+    "id": "zenfs_sundial_desc_no_label",
+    "type": "widget",
+    "label": "Sundial",
+    "style": "text",
+    "var": "sundial_text",
+    "width": 46,
+    "flags": [ "W_LABEL_NONE", "W_DISABLED_BY_DEFAULT" ]
+  },
+  {
+    "id": "zenfs_sundial_label_text",
+    "type": "widget",
+    "style": "text",
+    "width": 4,
+    "flags": [ "W_LABEL_NONE" ],
+    "clauses": [
+      { "id": "sundial_sun", "text": "Sun ", "color": "white", "condition": "is_day" },
+      { "id": "sundial_moon", "text": "Moon", "color": "white", "condition": { "not": "is_day" } }
+    ]
+  },
+  {
+    "id": "zenfs_sun_bar",
+    "type": "widget",
+    "style": "layout",
+    "label": "Sundial",
+    "arrange": "minimum_columns",
+    "widgets": [ "zenfs_sundial_label_text", "zenfs_sundial_desc_no_label" ],
+    "flags": [ "W_LABEL_NONE", "W_DISABLED_BY_DEFAULT" ]
+  },
+  {
+    "id": "zenfs_moon_phase_text",
+    "type": "widget",
+    "style": "text",
+	"text_align": "right",
+    "clauses": [
+      {
+        "id": "new_moon",
+        "text": "New moon  ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 0 } ] }
+      },
+      {
+        "id": "waxing_crescent",
+        "text": "Wax.crescent",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 1 } ] }
+      },
+      {
+        "id": "half_moon",
+        "text": "Half moon  ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 2 } ] }
+      },
+      {
+        "id": "waxing_gibbous",
+        "text": "Wax.gibbous ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 3 } ] }
+      },
+      {
+        "id": "full_moon",
+        "text": "Full moon  ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 4 } ] }
+      },
+      {
+        "id": "waning_gibbous",
+        "text": "Wan.gibbous ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 5 } ] }
+      },
+      {
+        "id": "half_moon",
+        "text": "Half moon  ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 6 } ] }
+      },
+      {
+        "id": "waning_crescent",
+        "text": "Wan.crescent",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 7 } ] }
+      },
+      {
+        "id": "dark_moon",
+        "text": "Dark moon  ",
+        "color": "white",
+        "condition": { "compare_num": [ "moon", "==", { "const": 8 } ] }
+      }
+    ]
+  },
+  {
+    "id": "zenfs_light_desc",
+    "type": "widget",
+    "copy-from": "lighting_desc",
+	"label": "Light"
+  },
+  {
+	"id": "zenfs_wind_desc_18",
+	"type": "widget",
+	"style": "layout",
+	"width": 17,
+	"arrange": "columns",
+	"widgets": [ "wind_desc_no_label" ]
+  },
+  {
+	"id": "zenfs_lighting_desc_18",
+	"type": "widget",
+	"style": "layout",
+    "separator": ": ",
+	"width": 16,
+	"arrange": "columns",
+	"widgets": [ "lighting_desc_no_label" ]
+  },
+  {
+	"id": "zenfs_wind_light_weather",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "minimum_columns",
+	"widgets": [ "zenfs_wind_desc_18", "zenfs_lighting_desc_18", "weather_desc_no_label" ]
+  },
+  {
+	"id": "zenfs_date",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "columns",
+	"width": 16,
+	"widgets": [ "date_desc_no_label" ]
+  },
+  {
+	"id": "zenfs_time",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "columns",
+	"width": 18,
+	"widgets": [ "time_desc_no_label" ]
+  },
+  {
+	"id": "zenfs_date_desc_25",
+	"type": "widget",
+	"style": "layout",
+	"width": 18,
+	"arrange": "rows",
+	"widgets": [ "date_desc_label" ]
+  },
+  {
+	"id": "zenfs_time_desc_25",
+	"type": "widget",
+	"style": "layout",
+	"width": 18,
+	"arrange": "rows",
+	"widgets": [ "time_desc_label" ]
+  },
+  {
+	"id": "zenfs_env_temp_desc",
+	"type": "widget",
+	"style": "layout",
+	"width": 17,
+	"arrange": "rows",
+	"widgets": [ "env_temp_desc_no_label" ]
+  },
+  {
+	"id": "zenfs_temp_date_time_safe",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "minimum_columns",
+	"widgets": [ "zenfs_env_temp_desc", "zenfs_date", "zenfs_time", "safe_mode_classic_desc_right" ]
+  },
+  {
+	"id": "zenfs_place_desc_50",
+	"type": "widget",
+	"style": "layout",
+    "separator": ": ",
+	"width": 50,
+	"arrange": "columns",
+	"widgets": [ "place_desc_no_label" ]
+  },
+  {
+    "id": "zenfs_rad_badge_desc_13",
+    "type": "widget",
+    "label": "Rad",
+    "style": "text",
+	"width": 13,
+    "text_align": "right",
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ],
+    "copy-from": "rad_badge_template"
+  },
+  {
+	"id": "zenfs_rad_badge_desc",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "rows",
+	"widgets": [ "zenfs_rad_badge_desc_13" ]
+  },
+  {
+	"id": "zenfs_place_radiation",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "minimum_columns",
+	"widgets": [ "zenfs_place_desc_50", "zenfs_rad_badge_desc" ]
+  },
+  {
+    "id": "sundial_over_overmap",
+    "type": "widget",
+    "style": "layout",
+    "label": "stack",
+    "arrange": "rows",
+    "widgets": [ "sundial_desc_no_label", "overmap_full_width" ]
+  },
+  {
+    "id": "moon_over_environment",
+    "type": "widget",
+    "style": "layout",
+    "label": "stack",
+    "arrange": "rows",
+    "widgets": [ "moon_phase_desc", "environment_stack" ]
+  },
+  {
+    "id": "environment_stack",
+    "type": "widget",
+    "style": "layout",
+    "label": "stacked",
+    "arrange": "rows",
+    "widgets": [ "place_desc", "lighting_desc", "weather_desc", "env_temp_desc", "date_desc_label", "time_desc_label" ]
+  }
+]

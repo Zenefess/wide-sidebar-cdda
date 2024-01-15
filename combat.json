@@ -1,0 +1,40 @@
+[
+  {
+    "id": "wield_label",
+    "type": "widget",
+    "style": "text",
+    "width": 12,
+    "arrange": "columns",
+    "string": "<color_white>Wielding:</color>"
+  },
+  {
+    "id": "zenfs_wield_white_label",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "widgets": [ "wield_label", "wielding_desc_no_label" ]
+  },
+  {
+    "id": "ma_label",
+    "type": "widget",
+    "style": "text",
+    "width": 12,
+    "arrange": "columns",
+    "string": "<color_white>Martial art:</color>"
+  },
+  {
+    "id": "zenfs_ma_white_label",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "widgets": [ "ma_label", "style_desc_no_label" ]
+  },
+  {
+    "id": "ma_buff_entries",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+	"separator": "   ",
+    "widgets": [ "ma_buff_legend" ]
+  }
+]

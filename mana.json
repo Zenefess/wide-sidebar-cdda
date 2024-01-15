@@ -1,0 +1,28 @@
+[
+  {
+    "id": "zenfs_bionicpower_bar_14",
+    "type": "widget",
+    "style": "graph",
+    "var": "power_percentage",
+    "label": "Power",
+    "width": 14,
+    "symbols": "·−=≡≣",
+    "fill": "bucket",
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_blue" ],
+    "breaks": [ 26, 34, 50 ],
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ]
+  },
+  {
+    "id": "zenfs_mana_bar_14",
+    "type": "widget",
+    "label": "Mana",
+    "style": "graph",
+    "var": "mana",
+    "width": 14,
+    "symbols": "·−=≡≣",
+    "fill": "bucket",
+    "colors": [ "c_red", "c_brown", "c_blue" ],
+    "breaks": [ 26, 50 ],
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ]
+  }
+]
