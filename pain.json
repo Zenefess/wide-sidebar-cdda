@@ -8,18 +8,6 @@
     "flags": [ "W_LABEL_NONE" ]
   },
   {
-    "id": "zenfs_pain_bar_29",
-    "type": "widget",
-    "var": "pain",
-    "style": "graph",
-    "label": "Pain",
-    "fill": "bucket",
-    "width": 29,
-    "symbols": "·−=≡≣",
-    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ],
-	"flags": [ "W_LABEL_NONE", "W_DISABLED_WHEN_EMPTY" ]
-  },
-  {
     "id": "zenfs_pain_bar_15",
     "type": "widget",
     "var": "pain",
@@ -29,6 +17,33 @@
     "width": 15,
     "symbols": "·−=≡≣",
     "flags": [ "W_DISABLED_WHEN_EMPTY" ],
-    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ]
+    "colors": [ "c_dark_gray", "c_green", "c_yellow", "c_red", "c_light_red_red" ],
+    "breaks": [ 25, 50, 71, 84 ]
+  },
+  {
+    "id": "zenfs_pain_bar_24",
+    "type": "widget",
+    "var": "pain",
+    "style": "graph",
+    "label": "<color_magenta>Pain</color>",
+    "fill": "bucket",
+    "width": 24,
+    "symbols": "·−=≡≣",
+    "flags": [ "W_DISABLED_WHEN_EMPTY" ],
+    "colors": [ "c_dark_gray", "c_green", "c_yellow", "c_red", "c_light_red_red" ],
+    "breaks": [ 25, 50, 71, 84 ]
+  },
+  {
+    "id": "zenfs_pain_bar_29",
+    "type": "widget",
+    "var": "pain",
+    "style": "graph",
+    "label": "Pain",
+    "fill": "bucket",
+    "width": 29,
+    "symbols": "·−=≡≣",
+    "colors": [ "c_dark_gray", "c_green", "c_yellow", "c_red", "c_light_red_red" ],
+    "breaks": [ 25, 50, 71, 84 ],
+	"flags": [ "W_LABEL_NONE", "W_DISABLED_WHEN_EMPTY" ]
   }
 ]

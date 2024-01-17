@@ -4,7 +4,14 @@
     "type": "widget",
     "style": "layout",
 	"arrange": "columns",
-	"widgets": [ "zenfs_hp_bars_and_health", "zenfs_graphs_stamina_needs_stats" ]
+	"widgets": [ "zenfs_hp_bars_and_health", "zenfs_graphs_pain_stamina_needs_stats" ]
+  },
+  {
+    "id": "zenfs_hp_bars_and_stats_alt",
+    "type": "widget",
+    "style": "layout",
+	"arrange": "columns",
+	"widgets": [ "zenfs_hp_bars_and_health_alt", "zenfs_graphs_stamina_needs_stats" ]
   },
   {
 	"id": "zenfs_hp_bars_and_health",
@@ -12,7 +19,23 @@
 	"style": "layout",
 	"arrange": "rows",
 	"width": 20,
+	"widgets": [ "zenfs_status_hpg_layout_head", "zenfs_status_hpg_layout_torso", "zenfs_status_hpg_layout_larm", "zenfs_status_hpg_layout_rarm", "zenfs_status_hpg_layout_lleg", "zenfs_status_hpg_layout_rleg", "zenfs_blank_line", "zenfs_carry_weight_bar_12", "zenfs_fatigue_bar_12", "zenfs_weariness_bar_10", "zenfs_activity_desc", "zenfs_weariness_trans_malus", "zenfs_bionicpower_bar_14", "zenfs_mana_bar_14" ]
+  },
+  {
+	"id": "zenfs_hp_bars_and_health_alt",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "rows",
+	"width": 20,
 	"widgets": [ "zenfs_status_hpg_layout_head", "zenfs_status_hpg_layout_torso", "zenfs_status_hpg_layout_larm", "zenfs_status_hpg_layout_rarm", "zenfs_status_hpg_layout_lleg", "zenfs_status_hpg_layout_rleg", "zenfs_blank_line", "zenfs_pain_bar_15", "zenfs_carry_weight_bar_12", "zenfs_fatigue_bar_12", "zenfs_weariness_bar_10", "zenfs_activity_desc", "zenfs_bionicpower_bar_14", "zenfs_mana_bar_14" ]
+  },
+  {
+	"id": "zenfs_graphs_pain_stamina_needs_stats",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "rows",
+	"width": 29,
+	"widgets": [ "zenfs_body_graphs_narrow", "zenfs_pain_bar_24", "zenfs_stamina_bar_21", "zenfs_needs_stats" ]
   },
   {
 	"id": "zenfs_graphs_stamina_needs_stats",
@@ -21,29 +44,6 @@
 	"arrange": "rows",
 	"width": 29,
 	"widgets": [ "zenfs_body_graphs_narrow", "zenfs_stamina_label", "zenfs_stamina_bar_29", "zenfs_needs_stats" ]
-  },
-  {
-    "id": "zenfs_hp_bars_and_stats_alt",
-    "type": "widget",
-    "style": "layout",
-	"arrange": "columns",
-	"widgets": [ "zenfs_hp_bars_and_health_alt", "zenfs_graphs_pain_needs_stats" ]
-  },
-  {
-	"id": "zenfs_hp_bars_and_health_alt",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "rows",
-	"width": 20,
-	"widgets": [ "zenfs_status_hpg_layout_head", "zenfs_status_hpg_layout_torso", "zenfs_status_hpg_layout_larm", "zenfs_status_hpg_layout_rarm", "zenfs_status_hpg_layout_lleg", "zenfs_status_hpg_layout_rleg", "zenfs_blank_line", "zenfs_carry_weight_bar_12", "zenfs_stamina_bar_12", "zenfs_fatigue_bar_12", "zenfs_weariness_bar_10", "zenfs_activity_desc", "zenfs_bionicpower_bar_14", "zenfs_mana_bar_14" ]
-  },
-  {
-	"id": "zenfs_graphs_pain_needs_stats",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "rows",
-	"width": 29,
-	"widgets": [ "zenfs_body_graphs_narrow", "zenfs_pain_label", "zenfs_pain_bar_29", "zenfs_needs_stats" ]
   },
   {
 	"id": "zenfs_needs_stats",
