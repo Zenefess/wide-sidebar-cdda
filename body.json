@@ -8,6 +8,14 @@
     "widgets": [ "zenfs_body_graph_title", "zenfs_body_graph" ]
   },
   {
+    "id": "zenfs_titled_body_graph_alt",
+    "type": "widget",
+    "style": "layout",
+    "width": 13,
+    "arrange": "rows",
+    "widgets": [ "zenfs_body_graph_title_alt", "zenfs_body_graph_alt" ]
+  },
+  {
     "id": "zenfs_body_graph_title",
     "type": "widget",
     "style": "text",
@@ -15,10 +23,27 @@
     "flags": [ "W_LABEL_NONE" ]
   },
   {
+    "id": "zenfs_body_graph_title_alt",
+    "type": "widget",
+    "style": "text",
+    "string": "   <color_white>Status</color>",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
     "id": "zenfs_body_graph",
     "type": "widget",
     "label": "Body Graph",
     "var": "body_graph",
+    "style": "text",
+    "width": 13,
+    "height": 13,
+    "flags": [ "W_LABEL_NONE", "W_DISABLED_BY_DEFAULT" ]
+  },
+  {
+    "id": "zenfs_body_graph_alt",
+    "type": "widget",
+    "label": "Body Graph (status)",
+    "var": "body_graph_status",
     "style": "text",
     "width": 13,
     "height": 13,
@@ -33,11 +58,26 @@
     "widgets": [ "zenfs_body_graph_status", "zenfs_body_graph_temp", "zenfs_body_graph_encumb" ]
   },
   {
+    "id": "zenfs_body_graphs_narrow_alt",
+    "type": "widget",
+    "style": "layout",
+    "width": 29,
+    "arrange": "columns",
+    "widgets": [ "zenfs_body_graph_wetness", "zenfs_body_graph_temp", "zenfs_body_graph_encumb" ]
+  },
+  {
     "id": "zenfs_body_graph_status",
     "type": "widget",
     "style": "layout",
     "arrange": "rows",
     "widgets": [ "zenfs_body_graph_status_text", "zenfs_body_graph_status_layout" ]
+  },
+  {
+    "id": "zenfs_body_graph_wetness",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "rows",
+    "widgets": [ "zenfs_body_graph_wetness_text", "zenfs_body_graph_wetness_layout" ]
   },
   {
     "id": "zenfs_body_graph_temp",
@@ -58,6 +98,13 @@
     "type": "widget",
     "style": "text",
     "string": " <color_white>Status</color>",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_body_graph_wetness_text",
+    "type": "widget",
+    "style": "text",
+    "string": " <color_white>Wetness</color>",
     "flags": [ "W_LABEL_NONE" ]
   },
   {
@@ -83,10 +130,16 @@
     "widgets": [ "compact_body_graph" ]
   },
   {
-    "id": "zenfs_body_graph_encumb_layout",
+    "id": "zenfs_body_graph_status_layout",
     "type": "widget",
     "copy-from": "zenfs_body_graph_layout",
-    "widgets": [ "compact_body_graph_encumb" ]
+    "widgets": [ "compact_body_graph_status" ]
+  },
+  {
+    "id": "zenfs_body_graph_wetness_layout",
+    "type": "widget",
+    "copy-from": "zenfs_body_graph_layout",
+    "widgets": [ "zenfs_compact_body_graph_wet" ]
   },
   {
     "id": "zenfs_body_graph_temp_layout",
@@ -95,9 +148,9 @@
     "widgets": [ "compact_body_graph_temp" ]
   },
   {
-    "id": "zenfs_body_graph_status_layout",
+    "id": "zenfs_body_graph_encumb_layout",
     "type": "widget",
     "copy-from": "zenfs_body_graph_layout",
-    "widgets": [ "compact_body_graph_status" ]
+    "widgets": [ "compact_body_graph_encumb" ]
   }
 ]

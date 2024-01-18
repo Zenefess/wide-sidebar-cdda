@@ -97,5 +97,19 @@
 	"arrange": "rows",
 	"width": 14,
 	"widgets": [ "zenfs_malus_trans_bar_8" ]
+  },
+  {
+    "id": "zenfs_cardio_fit",
+	"type": "widget",
+	"style": "number",
+	"var": "cardio_fit",
+	"flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_cardio_acc",
+	"type": "widget",
+	"style": "number",
+	"var": "cardio_acc",
+	"flags": [ "W_LABEL_NONE" ]
   }
 ]

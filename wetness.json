@@ -6,7 +6,7 @@
     "width": 1,
     "symbols": "·−=≡≣",
     "fill": "bucket",
-    "colors": [ "c_dark_gray", "c_blue", "c_light_blue", "c_cyan", "c_white" ],
+    "colors": [ "c_dark_gray", "c_blue", "c_light_blue", "c_cyan" ],
     "flags": [ "W_LABEL_NONE" ]
   },
   {
@@ -50,5 +50,12 @@
     "var": "bp_wetness",
     "bodypart": "leg_r",
     "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_compact_body_graph_wet",
+    "type": "widget",
+    "copy-from": "compact_body_graph_template",
+    "label": "Body Graph (wetness)",
+    "var": "body_graph_wet"
   }
 ]

@@ -8,37 +8,37 @@
     "clauses": [
       {
         "id": "none",
-        "text": { "str": "<color_dark_gray>Negligible</color>", "ctxt": "activity description" },
-        "color": "light_gray",
+        "text": { "str": "Negligible", "ctxt": "activity description" },
+        "color": "dark_gray",
         "condition": { "compare_num": [ { "u_val": "activity_level" }, "==", { "const": 0 } ] }
       },
       {
         "id": "light",
-        "text": { "str": "<color_green>Light</color>   ", "ctxt": "activity description" },
-        "color": "yellow",
+        "text": { "str": "Light   ", "ctxt": "activity description" },
+        "color": "green",
         "condition": { "compare_num": [ { "u_val": "activity_level" }, "==", { "const": 1 } ] }
       },
       {
         "id": "moderate",
-        "text": { "str": "<color_light_green>Moderate</color> ", "ctxt": "activity description" },
-        "color": "yellow",
+        "text": { "str": "Moderate ", "ctxt": "activity description" },
+        "color": "light_green",
         "condition": { "compare_num": [ { "u_val": "activity_level" }, "==", { "const": 2 } ] }
       },
       {
         "id": "brisk",
-        "text": { "str": "<color_yellow>Brisk</color>   ", "ctxt": "activity description" },
-        "color": "light_red",
+        "text": { "str": "Brisk   ", "ctxt": "activity description" },
+        "color": "yellow",
         "condition": { "compare_num": [ { "u_val": "activity_level" }, "==", { "const": 3 } ] }
       },
       {
         "id": "active",
-        "text": { "str": "<color_light_red>Intense</color> ", "ctxt": "activity description" },
+        "text": { "str": "Intense ", "ctxt": "activity description" },
         "color": "light_red",
         "condition": { "compare_num": [ { "u_val": "activity_level" }, "==", { "const": 4 } ] }
       },
       {
         "id": "extreme",
-        "text": { "str": "<color_red>Extreme</color> ", "ctxt": "activity description" },
+        "text": { "str": "Extreme ", "ctxt": "activity description" },
         "color": "red",
         "condition": { "compare_num": [ { "u_val": "activity_level" }, ">=", { "const": 5 } ] }
       }
