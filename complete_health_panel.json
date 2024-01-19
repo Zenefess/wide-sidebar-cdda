@@ -4,14 +4,7 @@
     "type": "widget",
     "style": "layout",
 	"arrange": "columns",
-	"widgets": [ "zenfs_hp_bars_and_health", "zenfs_graphs_pain_stamina_needs_stats" ]
-  },
-  {
-    "id": "zenfs_hp_bars_and_stats_alt",
-    "type": "widget",
-    "style": "layout",
-	"arrange": "columns",
-	"widgets": [ "zenfs_hp_bars_and_health_alt", "zenfs_graphs_pain_stamina_needs_stats_alt" ]
+	"widgets": [ "zenfs_hp_bars_and_health", "zenfs_graphs_needs_stats_movement" ]
   },
   {
 	"id": "zenfs_hp_bars_and_health",
@@ -19,54 +12,38 @@
 	"style": "layout",
 	"arrange": "rows",
 	"width": 20,
-	"widgets": [ "zenfs_status_hpg_layout_head", "zenfs_status_hpg_layout_torso", "zenfs_status_hpg_layout_larm", "zenfs_status_hpg_layout_rarm", "zenfs_status_hpg_layout_lleg", "zenfs_status_hpg_layout_rleg", "zenfs_blank_line", "zenfs_carry_weight_bar_12", "zenfs_fatigue_bar_12", "zenfs_weariness_bar_10", "zenfs_activity_desc", "zenfs_weariness_trans_malus", "zenfs_bionicpower_bar_14", "zenfs_mana_bar_14" ]
+	"widgets": [ "zenfs_status_hpg_layout_head", "zenfs_status_hpg_layout_torso", "zenfs_status_hpg_layout_larm", "zenfs_status_hpg_layout_rarm", "zenfs_status_hpg_layout_lleg", "zenfs_status_hpg_layout_rleg", "zenfs_blank_line", "zenfs_pain_bar_15", "zenfs_carry_weight_bar_12", "zenfs_stamina_bar_12", "zenfs_fatigue_bar_12", "zenfs_weariness_bar_10", "zenfs_activity_desc", "zenfs_weariness_trans_malus", "zenfs_bionic_bar_14_with_balance", "zenfs_mana_bar_14" ]
   },
   {
-	"id": "zenfs_hp_bars_and_health_alt",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "rows",
-	"width": 20,
-	"widgets": [ "zenfs_status_hpg_layout_head_alt", "zenfs_status_hpg_layout_torso_alt", "zenfs_status_hpg_layout_larm_alt", "zenfs_status_hpg_layout_rarm_alt", "zenfs_status_hpg_layout_lleg_alt", "zenfs_status_hpg_layout_rleg_alt", "zenfs_blank_line", "zenfs_carry_weight_bar_12", "zenfs_fatigue_bar_12", "zenfs_weariness_bar_10", "zenfs_activity_desc", "zenfs_weariness_trans_malus", "zenfs_bionic_bars", "zenfs_mana_bar_14" ]
-  },
-  {
-	"id": "zenfs_graphs_pain_stamina_needs_stats",
+	"id": "zenfs_graphs_needs_stats_movement",
 	"type": "widget",
 	"style": "layout",
 	"arrange": "rows",
 	"width": 29,
-	"widgets": [ "zenfs_body_graphs_narrow", "zenfs_pain_bar_24", "zenfs_stamina_bar_21", "zenfs_needs_stats" ]
+	"widgets": [ "zenfs_body_graphs_narrow", "zenfs_needs_stats_movement" ]
   },
   {
-	"id": "zenfs_graphs_pain_stamina_needs_stats_alt",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "rows",
-	"width": 29,
-	"widgets": [ "zenfs_body_graphs_narrow_alt", "zenfs_pain_bar_24", "zenfs_stamina_bar_21", "zenfs_needs_stats" ]
-  },
-  {
-	"id": "zenfs_graphs_stamina_needs_stats",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "rows",
-	"width": 29,
-	"widgets": [ "zenfs_body_graphs_narrow", "zenfs_stamina_label", "zenfs_stamina_bar_29", "zenfs_needs_stats" ]
-  },
-  {
-	"id": "zenfs_needs_stats",
+	"id": "zenfs_needs_stats_movement",
 	"type": "widget",
 	"style": "layout",
 	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_thirst_hunger", "zenfs_stat_block" ]
+	"widgets": [ "zenfs_weight_thirst_hunger", "zenfs_stat_block_movement" ]
   },
   {
-	"id": "zenfs_thirst_hunger",
+	"id": "zenfs_weight_thirst_hunger",
 	"type": "widget",
 	"style": "layout",
 	"arrange": "rows",
 	"width": 10,
-	"widgets": [ "zenfs_thirst_label", "zenfs_thirst_desc", "zenfs_hunger_label", "zenfs_hunger_desc" ]
+	"widgets": [ "zenfs_blank_line", "zenfs_weight_label", "zenfs_weight_desc", "zenfs_blank_line", "zenfs_thirst_label", "zenfs_thirst_desc", "zenfs_hunger_label", "zenfs_hunger_desc" ]
+  },
+  {
+	"id": "zenfs_stat_block_movement",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "rows",
+	"width": 17,
+	"widgets": [ "zenfs_blank_line", "zenfs_stat_block", "zenfs_blank_line", "zenfs_movement_block" ]
   },
   {
 	"id": "zenfs_stat_block",

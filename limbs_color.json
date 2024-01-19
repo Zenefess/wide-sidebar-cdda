@@ -1,0 +1,52 @@
+[
+  {
+    "id": "zenfs_bp_status_text",
+    "type": "widget",
+    "style": "text",
+    "clauses": [
+      {
+        "id": "bleedingAndBitten3",
+        "color": "magenta_red",
+        "condition": { "and": [ { "u_has_effect": "bite" }, { "u_has_effect": "bleed", "intensity": 21 } ] }
+      },
+      {
+        "id": "bleedingAndBitten12",
+        "color": "magenta",
+        "condition": {
+          "and": [
+            { "u_has_effect": "bite" },
+            { "u_has_effect": "bleed", "intensity": 1 },
+            { "compare_num": [ { "u_val": "effect_intensity", "effect": "bleed" }, "<", { "const": 21 } ] }
+          ]
+        }
+      },
+      {
+        "id": "bleeding3",
+        "color": "light_red_red",
+        "condition": { "u_has_effect": "bleed", "intensity": 21 }
+      },
+      {
+        "id": "bleeding2",
+        "color": "red",
+        "condition": {
+          "and": [
+            { "u_has_effect": "bleed", "intensity": 11 },
+            { "compare_num": [ { "u_val": "effect_intensity", "effect": "bleed" }, "<", { "const": 21 } ] }
+          ]
+        }
+      },
+      {
+        "id": "bleeding1",
+        "color": "light_red",
+        "condition": {
+          "and": [
+            { "u_has_effect": "bleed", "intensity": 1 },
+            { "compare_num": [ { "u_val": "effect_intensity", "effect": "bleed" }, "<", { "const": 11 } ] }
+          ]
+        }
+      },
+      { "id": "infected", "color": "green", "condition": { "u_has_effect": "infected" } },
+      { "id": "bitten", "color": "blue", "condition": { "u_has_effect": "bite" } }
+    ]
+  }
+]

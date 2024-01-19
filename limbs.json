@@ -1,59 +1,5 @@
 [
   {
-    "id": "zenfs_status_hpg_layout_head",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 20,
-    "widgets": [ "zenfs_bp_head_text", "zenfs_hp_head_graph", "zenfs_wetness_head" ],
-	"flags": [ "W_NO_PADDING" ]
-  },
-  {
-    "id": "zenfs_status_hpg_layout_torso",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 20,
-    "widgets": [ "zenfs_bp_torso_text", "zenfs_hp_torso_graph", "zenfs_wetness_torso" ],
-	"flags": [ "W_NO_PADDING" ]
-  },
-  {
-    "id": "zenfs_status_hpg_layout_larm",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 20,
-    "widgets": [ "zenfs_bp_larm_text", "zenfs_hp_left_arm_graph", "zenfs_wetness_larm" ],
-	"flags": [ "W_NO_PADDING" ]
-  },
-  {
-    "id": "zenfs_status_hpg_layout_rarm",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 20,
-    "widgets": [ "zenfs_bp_rarm_text", "zenfs_hp_right_arm_graph", "zenfs_wetness_rarm" ],
-	"flags": [ "W_NO_PADDING" ]
-  },
-  {
-    "id": "zenfs_status_hpg_layout_lleg",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 20,
-    "widgets": [ "zenfs_bp_lleg_text", "zenfs_hp_left_leg_graph", "zenfs_wetness_lleg" ],
-	"flags": [ "W_NO_PADDING" ]
-  },
-  {
-    "id": "zenfs_status_hpg_layout_rleg",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 20,
-    "widgets": [ "zenfs_bp_rleg_text", "zenfs_hp_right_leg_graph", "zenfs_wetness_rleg" ],
-	"flags": [ "W_NO_PADDING" ]
-  },
-  {
     "id": "zenfs_hitpoint_graph_no_label",
     "type": "widget",
     "style": "graph",
@@ -74,7 +20,7 @@
     "flags": [ "W_NO_PADDING", "W_LABEL_NONE" ]
   },
   {
-    "id": "zenfs_status_hpg_layout_head_alt",
+    "id": "zenfs_status_hpg_layout_head",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -83,7 +29,7 @@
   	"flags": [ "W_NO_PADDING" ]
 },
   {
-    "id": "zenfs_status_hpg_layout_torso_alt",
+    "id": "zenfs_status_hpg_layout_torso",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -92,7 +38,7 @@
   	"flags": [ "W_NO_PADDING" ]
   },
   {
-    "id": "zenfs_status_hpg_layout_larm_alt",
+    "id": "zenfs_status_hpg_layout_larm",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -101,7 +47,7 @@
   	"flags": [ "W_NO_PADDING" ]
   },
   {
-    "id": "zenfs_status_hpg_layout_rarm_alt",
+    "id": "zenfs_status_hpg_layout_rarm",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -110,7 +56,7 @@
   	"flags": [ "W_NO_PADDING" ]
   },
   {
-    "id": "zenfs_status_hpg_layout_lleg_alt",
+    "id": "zenfs_status_hpg_layout_lleg",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -119,7 +65,7 @@
   	"flags": [ "W_NO_PADDING" ]
   },
   {
-    "id": "zenfs_status_hpg_layout_rleg_alt",
+    "id": "zenfs_status_hpg_layout_rleg",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -146,7 +92,7 @@
   {
     "id": "zenfs_hp_left_arm_graph",
     "type": "widget",
-    "label": "L ARM",
+    "label": "L.ARM",
     "var": "bp_hp",
     "bodypart": "arm_l",
     "copy-from": "zenfs_hitpoint_graph_no_label"
@@ -154,7 +100,7 @@
   {
     "id": "zenfs_hp_right_arm_graph",
     "type": "widget",
-    "label": "R ARM",
+    "label": "R.ARM",
     "var": "bp_hp",
     "bodypart": "arm_r",
     "copy-from": "zenfs_hitpoint_graph_no_label"
@@ -162,7 +108,7 @@
   {
     "id": "zenfs_hp_left_leg_graph",
     "type": "widget",
-    "label": "L LEG",
+    "label": "L.LEG",
     "var": "bp_hp",
     "bodypart": "leg_l",
     "copy-from": "zenfs_hitpoint_graph_no_label"
@@ -170,7 +116,7 @@
   {
     "id": "zenfs_hp_right_leg_graph",
     "type": "widget",
-    "label": "R LEG",
+    "label": "R.LEG",
     "var": "bp_hp",
     "bodypart": "leg_r",
     "copy-from": "zenfs_hitpoint_graph_no_label"
@@ -178,7 +124,7 @@
   {
     "id": "zenfs_hp_head_graph_alt",
     "type": "widget",
-    "label": "HEAD",
+    "label": "HEAD  ",
     "var": "bp_hp",
     "bodypart": "head",
     "copy-from": "zenfs_hitpoint_graph_14"
@@ -186,7 +132,7 @@
   {
     "id": "zenfs_hp_torso_graph_alt",
     "type": "widget",
-    "label": "TORSO",
+    "label": "TORSO ",
     "var": "bp_hp",
     "bodypart": "torso",
     "copy-from": "zenfs_hitpoint_graph_14"
@@ -194,7 +140,7 @@
   {
     "id": "zenfs_hp_left_arm_graph_alt",
     "type": "widget",
-    "label": "L ARM",
+    "label": "L.ARM ",
     "var": "bp_hp",
     "bodypart": "arm_l",
     "copy-from": "zenfs_hitpoint_graph_14"
@@ -202,7 +148,7 @@
   {
     "id": "zenfs_hp_right_arm_graph_alt",
     "type": "widget",
-    "label": "R ARM",
+    "label": "R.ARM ",
     "var": "bp_hp",
     "bodypart": "arm_r",
     "copy-from": "zenfs_hitpoint_graph_14"
@@ -210,7 +156,7 @@
   {
     "id": "zenfs_hp_left_leg_graph_alt",
     "type": "widget",
-    "label": "L LEG",
+    "label": "L.LEG ",
     "var": "bp_hp",
     "bodypart": "leg_l",
     "copy-from": "zenfs_hitpoint_graph_14"
@@ -218,7 +164,7 @@
   {
     "id": "zenfs_hp_right_leg_graph_alt",
     "type": "widget",
-    "label": "R LEG",
+    "label": "R.LEG ",
     "var": "bp_hp",
     "bodypart": "leg_r",
     "copy-from": "zenfs_hitpoint_graph_14"
@@ -226,49 +172,43 @@
   {
 	"id": "zenfs_bp_head_text",
     "type": "widget",
-    "style": "text",
-    "string": "HEAD  ",
-    "width": 5,
-    "flags": [ "W_LABEL_NONE" ]
+	"copy-from": "zenfs_bp_status_text",
+    "bodypart": "head",
+    "label": "HEAD  "
   },
   {
 	"id": "zenfs_bp_torso_text",
     "type": "widget",
-    "style": "text",
-    "string": "TORSO ",
-    "width": 5,
-    "flags": [ "W_LABEL_NONE" ]
+	"copy-from": "zenfs_bp_status_text",
+    "bodypart": "torso",
+    "label": "TORSO "
   },
   {
 	"id": "zenfs_bp_larm_text",
     "type": "widget",
-    "style": "text",
-    "string": "L.ARM ",
-    "width": 5,
-    "flags": [ "W_LABEL_NONE" ]
+	"copy-from": "zenfs_bp_status_text",
+    "bodypart": "arm_r",
+    "label": "L.ARM "
   },
   {
 	"id": "zenfs_bp_rarm_text",
     "type": "widget",
-    "style": "text",
-    "string": "R.ARM ",
-    "width": 5,
-    "flags": [ "W_LABEL_NONE" ]
+	"copy-from": "zenfs_bp_status_text",
+    "bodypart": "arm_r",
+    "label": "R.ARM "
   },
   {
 	"id": "zenfs_bp_lleg_text",
     "type": "widget",
-    "style": "text",
-    "string": "L.LEG ",
-    "width": 5,
-    "flags": [ "W_LABEL_NONE" ]
+	"copy-from": "zenfs_bp_status_text",
+    "bodypart": "leg_l",
+    "label": "L.LEG "
   },
   {
 	"id": "zenfs_bp_rleg_text",
     "type": "widget",
-    "style": "text",
-    "string": "R.LEG ",
-    "width": 5,
-    "flags": [ "W_LABEL_NONE" ]
+	"copy-from": "zenfs_bp_status_text",
+    "bodypart": "leg_r",
+    "label": "R.LEG "
   }
 ]

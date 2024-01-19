@@ -1,10 +1,18 @@
 [
   {
+    "id": "environment_stack",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "rows",
+	"width": 50,
+    "widgets": [ "zenfs_sun_bar", "zenfs_wind_moon", "zenfs_lighting_date", "zenfs_weather_safe", "zenfs_env_temp_time_rad", "zenfs_blank_line", "zenfs_place_omloc" ]
+  },
+  {
 	"id": "zenfs_sun_with_moon",
 	"type": "widget",
 	"style": "layout",
 	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_sun_bar_46", "zenfs_moon_phase_text" ]
+	"widgets": [ "zenfs_sun_bar_51", "zenfs_moon_phase_text" ]
   },
   {
     "id": "zenfs_sundial_desc_no_label",
@@ -34,7 +42,7 @@
     "flags": [ "W_LABEL_NONE" ]
   },
   {
-    "id": "zenfs_sun_bar_46",
+    "id": "zenfs_sun_bar_51",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
@@ -174,27 +182,6 @@
 	"widgets": [ "zenfs_wind_desc_16", "zenfs_lighting_desc_12", "weather_desc_no_label" ]
   },
   {
-	"id": "zenfs_temp_date_time_safe",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_env_temp_desc", "zenfs_date", "zenfs_time", "zenfs_safe_mode_right" ]
-  },
-  {
-	"id": "zenfs_place_radiation",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_place_desc_50", "zenfs_rad_badge_desc" ]
-  },
-  {
-	"id": "zenfs_wind_light_weather_safe",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_wind_desc_16", "zenfs_lighting_desc_12", "zenfs_weather_desc_21", "zenfs_safe_mode_right" ]
-  },
-  {
 	"id": "zenfs_date_time_temp_rad",
 	"type": "widget",
 	"style": "layout",
@@ -202,19 +189,11 @@
 	"widgets": [ "zenfs_date", "zenfs_time", "zenfs_env_temp_desc", "zenfs_rad_badge_desc" ]
   },
   {
-	"id": "zenfs_place_omloc",
+	"id": "zenfs_wind_light_weather_safe",
 	"type": "widget",
 	"style": "layout",
 	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_place_desc", "zenfs_omloc_desc" ]
-  },
-  {
-    "id": "environment_stack",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "rows",
-	"width": 52,
-    "widgets": [ "zenfs_sun_bar", "zenfs_wind_moon", "zenfs_lighting_date", "zenfs_weather_safe", "zenfs_env_temp_time_rad", "zenfs_blank_line", "zenfs_place_omloc" ]
+	"widgets": [ "zenfs_wind_desc_16", "zenfs_lighting_desc_12", "zenfs_weather_desc_21", "zenfs_safe_mode_right" ]
   },
   {
     "id": "zenfs_wind_moon",
@@ -228,7 +207,7 @@
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_lighting_desc_18", "zenfs_date", "zenfs_blank_line" ]
+    "widgets": [ "zenfs_lighting_desc_16", "zenfs_date", "zenfs_blank_line" ]
   },
   {
     "id": "zenfs_weather_safe",
@@ -242,7 +221,14 @@
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_env_temp_desc_19", "zenfs_time_19", "zenfs_rad_badge_desc" ]
+    "widgets": [ "zenfs_env_temp_desc_17", "zenfs_time_19", "zenfs_rad_badge_desc" ]
+  },
+  {
+	"id": "zenfs_place_omloc",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "minimum_columns",
+	"widgets": [ "zenfs_place_desc", "zenfs_omloc_desc" ]
   },
   {
 	"id": "zenfs_wind_desc_16",
@@ -262,16 +248,10 @@
 	"widgets": [ "lighting_desc_no_label" ]
   },
   {
-	"id": "zenfs_lighting_desc_18",
+	"id": "zenfs_lighting_desc_16",
 	"type": "widget",
 	"copy-from": "zenfs_lighting_desc_12",
-	"width": 18
-  },
-  {
-	"id": "zenfs_lighting_desc_21",
-	"type": "widget",
-	"copy-from": "zenfs_lighting_desc_12",
-	"width": 21
+	"width": 16
   },
   {
     "id": "zenfs_weather_desc_21",
@@ -303,22 +283,6 @@
 	"width": 19
   },
   {
-	"id": "zenfs_date_desc_18",
-	"type": "widget",
-	"style": "layout",
-	"width": 18,
-	"arrange": "rows",
-	"widgets": [ "date_desc_label" ]
-  },
-  {
-	"id": "zenfs_time_desc_18",
-	"type": "widget",
-	"style": "layout",
-	"width": 18,
-	"arrange": "rows",
-	"widgets": [ "time_desc_label" ]
-  },
-  {
 	"id": "zenfs_env_temp_desc",
 	"type": "widget",
 	"style": "layout",
@@ -327,24 +291,16 @@
 	"widgets": [ "env_temp_desc_no_label" ]
   },
   {
-	"id": "zenfs_env_temp_desc_19",
+	"id": "zenfs_env_temp_desc_17",
 	"type": "widget",
 	"copy-from": "zenfs_env_temp_desc",
-	"width": 19
+	"width": 17
   },
   {
 	"id": "zenfs_place_desc",
 	"type": "widget",
 	"style": "layout",
 	"width": 0,
-	"arrange": "columns",
-	"widgets": [ "place_desc_no_label" ]
-  },
-  {
-	"id": "zenfs_place_desc_50",
-	"type": "widget",
-	"style": "layout",
-	"width": 50,
 	"arrange": "columns",
 	"widgets": [ "place_desc_no_label" ]
   },
@@ -368,6 +324,21 @@
 	"widgets": [ "zenfs_rad_badge_desc_8" ]
   },
   {
+    "id": "zenfs_omloc_desc",
+    "type": "widget",
+    "label": "Location",
+    "var": "overmap_loc_text",
+    "style": "text",
+	"text_align": "right",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_safe_mode_right",
+    "type": "widget",
+    "text_align": "right",
+    "copy-from": "safe_mode_classic_desc"
+  },
+  {
     "id": "zenfs_overmap_11x7",
     "type": "widget",
     "label": "Overmap",
@@ -386,34 +357,60 @@
 	"widgets": [ "zenfs_overmap_11x7" ]
   },
   {
-    "id": "zenfs_omloc_desc",
-    "type": "widget",
-    "label": "Location",
-    "var": "overmap_loc_text",
-    "style": "text",
-	"text_align": "right",
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_safe_mode_left",
-    "type": "widget",
-    "style": "text",
-    "text_align": "left",
-    "var": "safe_mode_classic_text",
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_safe_mode_right",
-    "type": "widget",
-    "text_align": "right",
-    "copy-from": "safe_mode_classic_desc"
-  },
-  {
-    "id": "zenfs_safe_mode_7",
+	"id": "zenfs_overmap_divider",
 	"type": "widget",
 	"style": "layout",
 	"arrange": "rows",
-	"width": 7,
-	"widgets": [ "zenfs_safe_mode_left" ]
+	"width": 1,
+	"widgets": [ "zenfs_om_divider_l1", "zenfs_om_divider_l2", "zenfs_om_divider_l3", "zenfs_om_divider_l4", "zenfs_om_divider_l5", "zenfs_om_divider_l6", "zenfs_om_divider_l7" ]
+  },
+  {
+    "id": "zenfs_om_divider_l1",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>╽</color>",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_om_divider_l2",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>┇</color>",
+    "flags": [ "W_LABEL_NONE"]
+  },
+  {
+    "id": "zenfs_om_divider_l3",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>┃</color>",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_om_divider_l4",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>┇</color>",
+    "flags": [ "W_LABEL_NONE"]
+  },
+  {
+    "id": "zenfs_om_divider_l5",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>┃</color>",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_om_divider_l6",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>┇</color>",
+    "flags": [ "W_LABEL_NONE"]
+  },
+  {
+    "id": "zenfs_om_divider_l7",
+    "type": "widget",
+    "style": "text",
+    "string": "<color_dark_gray>╿</color>",
+    "flags": [ "W_LABEL_NONE" ]
   }
 ]

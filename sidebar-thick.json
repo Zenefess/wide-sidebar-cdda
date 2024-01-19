@@ -3,19 +3,19 @@
     "id": "zenfs_complete_status_display",
     "type": "widget",
     "style": "layout",
-    "label": "Full status",
+    "label": "Graphs & meters",
     "arrange": "minimum_columns",
-    "description": "A large <color_yellow>health graph</color>, complete with <color_yellow>health</color> & <color_yellow>wetness meters</color> for all major body parts, <color_yellow>body graphs</color> for status, encumbrance & temperature, and all of the <color_yellow>character stats</color>.",
+    "description": "A large <color_yellow>status graph</color>, complete with <color_yellow>health meters</color> for all major body parts, <color_yellow>body graphs</color> for wetness, encumbrance & temperature, and all of the <color_yellow>character stats</color>.",
     "widgets": [ "zenfs_titled_body_graph", "zenfs_hp_bars_and_stats" ]
   },
   {
     "id": "zenfs_complete_status_display_alt",
     "type": "widget",
     "style": "layout",
-    "label": "Full status (alt)",
+    "label": "Meters; slim",
     "arrange": "minimum_columns",
-    "description": "A large <color_yellow>health graph</color>, complete with <color_yellow>health</color> & <color_yellow>wetness meters</color> for all major body parts, <color_yellow>body graphs</color> for status, encumbrance & temperature, and all of the <color_yellow>character stats</color>. Alternate version; large <color_yellow>body graph</color> represents <color_yellow>status</color>, and the first of the small <color_yellow>body graphs</color> represents <color_yellow>wetness</color>.",
-    "widgets": [ "zenfs_titled_body_graph_alt", "zenfs_hp_bars_and_stats_alt" ],
+    "description": "To do...",
+    "widgets": [ "zenfs_blank_line" ],
     "flags": [ "W_DISABLED_BY_DEFAULT" ]
   },
   {
@@ -37,24 +37,13 @@
     "widgets": [ "zenfs_ma_white_label", "ma_buff_entries" ]
   },
   {
-	"id": "zenfs_environment_safe",
-	"type": "widget",
-	"style": "layout",
-    "separator": ": ",
-	"label": "Environment/Safe mode",
-	"description": "Shows all <color_yellow>weather</color> & <color_yellow>location</color> information, as well as a <color_yellow>safe mode</color> indicator.",
-	"arrange": "rows",
-	"widgets": [ "zenfs_sun_with_moon", "zenfs_wind_light_weather_safe", "zenfs_date_time_temp_rad", "zenfs_place_omloc" ]
-  },
-  {
     "id": "zenfs_l_overmap_environment",
     "type": "widget",
     "style": "layout",
     "label": "L.Overmap/Environment",
 	"description": "Shows an 11x7 <color_yellow>overmap</color> on the left, with all <color_yellow>weather</color> & <color_yellow>location</color> information and a <color_yellow>safe mode</color> indicator on the right.",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_overmap", "environment_stack" ],
-    "flags": [ "W_DISABLED_BY_DEFAULT" ]
+    "widgets": [ "zenfs_overmap", "zenfs_overmap_divider", "environment_stack" ]
   },
   {
     "id": "zenfs_r_overmap_environment",
@@ -63,16 +52,17 @@
     "label": "R.Overmap/Environment",
 	"description": "Shows an 11x7 <color_yellow>overmap</color> on the right, with all <color_yellow>weather</color> & <color_yellow>location</color> information and a <color_yellow>safe mode</color> indicator on the left.",
     "arrange": "minimum_columns",
-    "widgets": [ "environment_stack", "zenfs_overmap" ],
-    "flags": [ "W_DISABLED_BY_DEFAULT" ]
+    "widgets": [ "environment_stack", "zenfs_overmap_divider", "zenfs_overmap" ]
   },
   {
-    "id": "zenfs_testing",
-    "type": "widget",
-    "style": "layout",
-    "label": "***TESTING***",
-    "arrange": "minimum_columns",
-    "widgets": [ "weight_desc_label", "move_num", "move_mode_desc", "move_cost_num" ],
+	"id": "zenfs_environment_safe",
+	"type": "widget",
+	"style": "layout",
+    "separator": ": ",
+	"label": "Environment; slim",
+	"description": "Shows all <color_yellow>weather</color> & <color_yellow>location</color> information, as well as a <color_yellow>safe mode</color> indicator.",
+	"arrange": "rows",
+	"widgets": [ "zenfs_sun_with_moon", "zenfs_wind_light_weather_safe", "zenfs_date_time_temp_rad", "zenfs_place_omloc" ],
     "flags": [ "W_DISABLED_BY_DEFAULT" ]
   },
   {
@@ -86,15 +76,14 @@
     "width": 66,
     "widgets": [
       "zenfs_complete_status_display",
-	  "zenfs_complete_status_display_alt",
       "zenfs_spacer",
 	  "zenfs_bp_top_armor",
 	  "zenfs_weapon_ammo_white_label",
 	  "zenfs_ma_buffs_white_label",
       "zenfs_spacer",
-	  "zenfs_environment_safe",
 	  "zenfs_l_overmap_environment",
 	  "zenfs_r_overmap_environment",
+	  "zenfs_environment_safe",
       "zenfs_spacer_disabled",
       "vehicle_acf_label_layout_columns",
 	  "compass_all_layout_alt",

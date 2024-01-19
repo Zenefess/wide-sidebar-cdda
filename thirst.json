@@ -3,7 +3,7 @@
     "id": "zenfs_thirst_label",
     "type": "widget",
     "style": "text",
-    "string": "  Thirst",
+    "string": "  <color_dark_gray>Thirst</color>",
     "width": 7,
     "flags": [ "W_LABEL_NONE" ]
   },

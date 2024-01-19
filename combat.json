@@ -72,18 +72,6 @@
     ]
   },
   {
-    "id": "zenfs_bp_top_armor_separator",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "rows",
-	"width": 1,
-    "widgets": [
-      "line_top",
-      "line_middle",
-      "line_bottom"
-    ]
-  },
-  {
     "id": "zenfs_bp_top_armor_right",
     "type": "widget",
     "style": "layout",
@@ -149,29 +137,5 @@
     "bodypart": "foot_r",
     "copy-from": "zenfs_bp_armor_template",
 	"flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "line_top",
-    "type": "widget",
-    "style": "text",
-    "width": 1,
-    "arrange": "rows",
-    "string": "<color_white>╻</color>"
-  },
-  {
-    "id": "line_middle",
-    "type": "widget",
-    "style": "text",
-    "width": 1,
-    "arrange": "rows",
-    "string": "<color_white>┃</color>"
-  },
-  {
-    "id": "line_bottom",
-    "type": "widget",
-    "style": "text",
-    "width": 1,
-    "arrange": "rows",
-    "string": "<color_white>╹</color>"
   }
 ]

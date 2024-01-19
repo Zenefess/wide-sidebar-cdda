@@ -3,7 +3,7 @@
     "id": "zenfs_hunger_label",
     "type": "widget",
     "style": "text",
-    "string": "  Hunger",
+    "string": "  <color_dark_gray>Hunger</color>",
     "width": 7,
     "flags": [ "W_LABEL_NONE" ]
   },

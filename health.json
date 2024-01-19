@@ -8,39 +8,13 @@
 	"widgets": [ "mood_desc_label", "focus_num", "speed_num", "sound_num" ]
   },
   {
-    "id": "zenfs_stamina_label",
-    "type": "widget",
-    "style": "text",
-    "string": "           <color_white>Stamina</color>",
-    "width": 29,
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
     "id": "zenfs_stamina_bar_12",
-    "type": "widget",
-    "copy-from": "stamina_widget",
-    "label": "Stamina",
-    "style": "graph",
-    "width": 12,
-    "symbols": "·−=≡≣"
-  },
-  {
-    "id": "zenfs_stamina_bar_21",
     "type": "widget",
     "copy-from": "stamina_widget",
     "label": "<color_cyan>Stamina</color>",
     "style": "graph",
-    "width": 21,
+    "width": 12,
     "symbols": "·−=≡≣"
-  },
-  {
-    "id": "zenfs_stamina_bar_29",
-    "type": "widget",
-    "copy-from": "stamina_widget",
-    "style": "graph",
-    "width": 29,
-    "symbols": "·−=≡≣",
-	"flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_weariness_bar_10",

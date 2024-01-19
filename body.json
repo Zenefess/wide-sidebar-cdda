@@ -5,25 +5,10 @@
     "style": "layout",
     "width": 13,
     "arrange": "rows",
-    "widgets": [ "zenfs_body_graph_title", "zenfs_body_graph" ]
-  },
-  {
-    "id": "zenfs_titled_body_graph_alt",
-    "type": "widget",
-    "style": "layout",
-    "width": 13,
-    "arrange": "rows",
-    "widgets": [ "zenfs_body_graph_title_alt", "zenfs_body_graph_alt" ]
+    "widgets": [ "zenfs_body_graph_title", "zenfs_blank_line", "zenfs_body_graph" ]
   },
   {
     "id": "zenfs_body_graph_title",
-    "type": "widget",
-    "style": "text",
-    "string": "   <color_white>Health</color>",
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_body_graph_title_alt",
     "type": "widget",
     "style": "text",
     "string": "   <color_white>Status</color>",
@@ -31,16 +16,6 @@
   },
   {
     "id": "zenfs_body_graph",
-    "type": "widget",
-    "label": "Body Graph",
-    "var": "body_graph",
-    "style": "text",
-    "width": 13,
-    "height": 13,
-    "flags": [ "W_LABEL_NONE", "W_DISABLED_BY_DEFAULT" ]
-  },
-  {
-    "id": "zenfs_body_graph_alt",
     "type": "widget",
     "label": "Body Graph (status)",
     "var": "body_graph_status",
@@ -55,22 +30,7 @@
     "style": "layout",
     "width": 29,
     "arrange": "columns",
-    "widgets": [ "zenfs_body_graph_status", "zenfs_body_graph_temp", "zenfs_body_graph_encumb" ]
-  },
-  {
-    "id": "zenfs_body_graphs_narrow_alt",
-    "type": "widget",
-    "style": "layout",
-    "width": 29,
-    "arrange": "columns",
     "widgets": [ "zenfs_body_graph_wetness", "zenfs_body_graph_temp", "zenfs_body_graph_encumb" ]
-  },
-  {
-    "id": "zenfs_body_graph_status",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "rows",
-    "widgets": [ "zenfs_body_graph_status_text", "zenfs_body_graph_status_layout" ]
   },
   {
     "id": "zenfs_body_graph_wetness",
@@ -92,13 +52,6 @@
     "style": "layout",
     "arrange": "rows",
     "widgets": [ "zenfs_body_graph_encumb_text", "zenfs_body_graph_encumb_layout" ]
-  },
-  {
-    "id": "zenfs_body_graph_status_text",
-    "type": "widget",
-    "style": "text",
-    "string": " <color_white>Status</color>",
-    "flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_body_graph_wetness_text",
