@@ -31,9 +31,9 @@
     "id": "zenfs_temperature_graph",
     "type": "widget",
     "style": "graph",
-    "symbols": "·−=≡≣",
-    "fill": "bucket",
-    "colors": [ "c_black", "c_brown", "c_red", "c_light_red", "h_light_red" ],
+    "symbols": "≣≡=−· ·−=≡≣",
+    "fill": "pool",
+    "colors": [ "h_light_blue", "c_light_blue", "c_blue", "c_cyan", "c_brown", "c_magenta", "c_red", "c_light_red", "h_light_red" ],
     "flags": [ "W_LABEL_NONE", "W_NO_PADDING" ]
   },
   {

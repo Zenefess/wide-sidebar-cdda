@@ -26,7 +26,7 @@
     "style": "graph",
     "symbols": "·−=≡≣",
     "fill": "bucket",
-    "colors": [ "c_blue", "c_light_blue", "c_cyan", "c_light_cyan", "h_light_cyan" ],
+    "colors": [ "c_black", "c_dark_gray", "c_light_gray", "c_white", "c_white_white" ],
     "flags": [ "W_LABEL_NONE", "W_NO_PADDING" ]
   },
   {

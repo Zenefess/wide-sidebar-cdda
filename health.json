@@ -4,7 +4,7 @@
 	"type": "widget",
 	"style": "layout",
 	"arrange": "rows",
-	"width": 8,
+	"width": 9,
 	"widgets": [ "mood_desc_label", "focus_num", "speed_num", "sound_num" ]
   },
   {

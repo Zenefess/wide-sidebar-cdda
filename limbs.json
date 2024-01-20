@@ -204,54 +204,6 @@
     "copy-from": "zenfs_hitpoint_graph"
   },
   {
-	"id": "zenfs_bp_head_text",
-    "type": "widget",
-	"copy-from": "zenfs_bp_status_text",
-    "bodypart": "head",
-	"width": 6,
-    "label": "HEAD  "
-  },
-  {
-	"id": "zenfs_bp_torso_text",
-    "type": "widget",
-	"copy-from": "zenfs_bp_status_text",
-    "bodypart": "torso",
-	"width": 6,
-    "label": "TORSO "
-  },
-  {
-	"id": "zenfs_bp_larm_text",
-    "type": "widget",
-	"copy-from": "zenfs_bp_status_text",
-    "bodypart": "arm_r",
-	"width": 6,
-    "label": "L.ARM "
-  },
-  {
-	"id": "zenfs_bp_rarm_text",
-    "type": "widget",
-	"copy-from": "zenfs_bp_status_text",
-    "bodypart": "arm_r",
-	"width": 6,
-    "label": "R.ARM "
-  },
-  {
-	"id": "zenfs_bp_lleg_text",
-    "type": "widget",
-	"copy-from": "zenfs_bp_status_text",
-    "bodypart": "leg_l",
-	"width": 6,
-    "label": "L.LEG "
-  },
-  {
-	"id": "zenfs_bp_rleg_text",
-    "type": "widget",
-	"copy-from": "zenfs_bp_status_text",
-    "bodypart": "leg_r",
-	"width": 6,
-    "label": "R.LEG "
-  },
-  {
     "id": "zenfs_hitpoint_graph",
     "type": "widget",
     "style": "graph",
