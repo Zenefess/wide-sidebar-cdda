@@ -283,20 +283,6 @@
 	"width": 19
   },
   {
-	"id": "zenfs_env_temp_desc",
-	"type": "widget",
-	"style": "layout",
-	"width": 21,
-	"arrange": "rows",
-	"widgets": [ "env_temp_desc_no_label" ]
-  },
-  {
-	"id": "zenfs_env_temp_desc_17",
-	"type": "widget",
-	"copy-from": "zenfs_env_temp_desc",
-	"width": 17
-  },
-  {
 	"id": "zenfs_place_desc",
 	"type": "widget",
 	"style": "layout",

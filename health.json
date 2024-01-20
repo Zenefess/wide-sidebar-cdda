@@ -8,13 +8,31 @@
 	"widgets": [ "mood_desc_label", "focus_num", "speed_num", "sound_num" ]
   },
   {
-    "id": "zenfs_stamina_bar_12",
+	"id": "zenfs_weariness_trans_malus",
+	"type": "widget",
+	"style": "layout",
+	"arrange": "minimum_columns",
+	"widgets": [ "zenfs_malus_trans_bar", "zenfs_weary_malus" ]
+  },
+  {
+    "id": "zenfs_stamina_bar",
     "type": "widget",
     "copy-from": "stamina_widget",
     "label": "<color_cyan>Stamina</color>",
     "style": "graph",
-    "width": 12,
     "symbols": "·−=≡≣"
+  },
+  {
+    "id": "zenfs_stamina_bar_12",
+    "type": "widget",
+    "copy-from": "zenfs_stamina_bar",
+    "width": 12
+  },
+  {
+    "id": "zenfs_stamina_bar_14",
+    "type": "widget",
+    "copy-from": "zenfs_stamina_bar",
+    "width": 14
   },
   {
     "id": "zenfs_weariness_bar_10",
@@ -28,22 +46,26 @@
     "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ]
   },
   {
-    "id": "zenfs_fatigue_bar_12",
+    "id": "zenfs_fatigue_bar",
     "type": "widget",
     "label": "Fatigue",
     "var": "fatigue",
     "style": "graph",
     "fill": "pool",
-    "width": 12,
     "symbols": "·−=≡≣",
     "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red" ]
   },
   {
-	"id": "zenfs_weariness_trans_malus",
-	"type": "widget",
-	"style": "layout",
-	"arrange": "minimum_columns",
-	"widgets": [ "zenfs_malus_trans_bar", "zenfs_weary_malus" ]
+    "id": "zenfs_fatigue_bar_12",
+    "type": "widget",
+	"copy-from": "zenfs_fatigue_bar",
+    "width": 12
+  },
+  {
+    "id": "zenfs_fatigue_bar_14",
+    "type": "widget",
+	"copy-from": "zenfs_fatigue_bar",
+    "width": 14
   },
   {
     "id": "zenfs_malus_trans_bar_8",
@@ -62,6 +84,7 @@
     "label": "Malus",
     "style": "text",
     "var": "weary_malus_text",
+	"width": 5,
     "flags": [ "W_LABEL_NONE" ]
   },
   {

@@ -1,31 +1,11 @@
 [
   {
-    "id": "zenfs_hitpoint_graph_no_label",
-    "type": "widget",
-    "style": "graph",
-    "width": 13,
-    "symbols": "·−=≡≣",
-    "fill": "bucket",
-    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ],
-    "flags": [ "W_NO_PADDING", "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_hitpoint_graph_14",
-    "type": "widget",
-    "style": "graph",
-    "width": 14,
-    "symbols": "·−=≡≣",
-    "fill": "bucket",
-    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ],
-    "flags": [ "W_NO_PADDING", "W_LABEL_NONE" ]
-  },
-  {
     "id": "zenfs_status_hpg_layout_head",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
     "width": 21,
-    "widgets": [ "zenfs_bp_head_text", "zenfs_hp_head_graph_alt" ],
+    "widgets": [ "zenfs_bp_head_text", "zenfs_hp_head_graph_14" ],
   	"flags": [ "W_NO_PADDING" ]
 },
   {
@@ -34,7 +14,7 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "width": 21,
-    "widgets": [ "zenfs_bp_torso_text", "zenfs_hp_torso_graph_alt" ],
+    "widgets": [ "zenfs_bp_torso_text", "zenfs_hp_torso_graph_14" ],
   	"flags": [ "W_NO_PADDING" ]
   },
   {
@@ -43,7 +23,7 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "width": 21,
-    "widgets": [ "zenfs_bp_larm_text", "zenfs_hp_left_arm_graph_alt" ],
+    "widgets": [ "zenfs_bp_larm_text", "zenfs_hp_left_arm_graph_14" ],
   	"flags": [ "W_NO_PADDING" ]
   },
   {
@@ -52,7 +32,7 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "width": 21,
-    "widgets": [ "zenfs_bp_rarm_text", "zenfs_hp_right_arm_graph_alt" ],
+    "widgets": [ "zenfs_bp_rarm_text", "zenfs_hp_right_arm_graph_14" ],
   	"flags": [ "W_NO_PADDING" ]
   },
   {
@@ -61,7 +41,7 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "width": 21,
-    "widgets": [ "zenfs_bp_lleg_text", "zenfs_hp_left_leg_graph_alt" ],
+    "widgets": [ "zenfs_bp_lleg_text", "zenfs_hp_left_leg_graph_14" ],
   	"flags": [ "W_NO_PADDING" ]
   },
   {
@@ -70,110 +50,165 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "width": 21,
-    "widgets": [ "zenfs_bp_rleg_text", "zenfs_hp_right_leg_graph_alt" ],
+    "widgets": [ "zenfs_bp_rleg_text", "zenfs_hp_right_leg_graph_14" ],
   	"flags": [ "W_NO_PADDING" ]
   },
   {
-    "id": "zenfs_hp_head_graph",
+    "id": "zenfs_status_bar_layout_head",
     "type": "widget",
-    "label": "HEAD",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 36,
+    "widgets": [ "zenfs_bp_head_text", "zenfs_hp_head_graph_13", "zenfs_wetness_head_graph_5", "zenfs_temperature_head_graph_5", "zenfs_encumberance_head_graph_5" ],
+  	"flags": [ "W_NO_PADDING" ]
+},
+  {
+    "id": "zenfs_status_bar_layout_torso",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 36,
+    "widgets": [ "zenfs_bp_torso_text", "zenfs_hp_torso_graph_13", "zenfs_wetness_torso_graph_5", "zenfs_temperature_torso_graph_5", "zenfs_encumberance_torso_graph_5" ],
+  	"flags": [ "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_status_bar_layout_larm",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 36,
+    "widgets": [ "zenfs_bp_larm_text", "zenfs_hp_left_arm_graph_13", "zenfs_wetness_left_arm_graph_5", "zenfs_temperature_left_arm_graph_5", "zenfs_encumberance_left_arm_graph_5" ],
+  	"flags": [ "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_status_bar_layout_rarm",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 36,
+    "widgets": [ "zenfs_bp_rarm_text", "zenfs_hp_right_arm_graph_13", "zenfs_wetness_right_arm_graph_5", "zenfs_temperature_right_arm_graph_5", "zenfs_encumberance_right_arm_graph_5" ],
+  	"flags": [ "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_status_bar_layout_lleg",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 36,
+    "widgets": [ "zenfs_bp_lleg_text", "zenfs_hp_left_leg_graph_13", "zenfs_wetness_left_leg_graph_5", "zenfs_temperature_left_leg_graph_5", "zenfs_encumberance_left_leg_graph_5" ],
+  	"flags": [ "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_status_bar_layout_rleg",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 36,
+    "widgets": [ "zenfs_bp_rleg_text", "zenfs_hp_right_leg_graph_13", "zenfs_wetness_right_leg_graph_5", "zenfs_temperature_right_leg_graph_5", "zenfs_encumberance_right_leg_graph_5" ],
+  	"flags": [ "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_hp_head_graph_13",
+    "type": "widget",
     "var": "bp_hp",
     "bodypart": "head",
-    "copy-from": "zenfs_hitpoint_graph_no_label"
+	"width": 13,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_torso_graph",
+    "id": "zenfs_hp_torso_graph_13",
     "type": "widget",
-    "label": "TORSO",
     "var": "bp_hp",
     "bodypart": "torso",
-    "copy-from": "zenfs_hitpoint_graph_no_label"
+	"width": 13,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_left_arm_graph",
+    "id": "zenfs_hp_left_arm_graph_13",
     "type": "widget",
-    "label": "L.ARM",
     "var": "bp_hp",
     "bodypart": "arm_l",
-    "copy-from": "zenfs_hitpoint_graph_no_label"
+	"width": 13,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_right_arm_graph",
+    "id": "zenfs_hp_right_arm_graph_13",
     "type": "widget",
-    "label": "R.ARM",
     "var": "bp_hp",
     "bodypart": "arm_r",
-    "copy-from": "zenfs_hitpoint_graph_no_label"
+	"width": 13,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_left_leg_graph",
+    "id": "zenfs_hp_left_leg_graph_13",
     "type": "widget",
-    "label": "L.LEG",
     "var": "bp_hp",
     "bodypart": "leg_l",
-    "copy-from": "zenfs_hitpoint_graph_no_label"
+	"width": 13,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_right_leg_graph",
+    "id": "zenfs_hp_right_leg_graph_13",
     "type": "widget",
-    "label": "R.LEG",
     "var": "bp_hp",
     "bodypart": "leg_r",
-    "copy-from": "zenfs_hitpoint_graph_no_label"
+	"width": 13,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_head_graph_alt",
+    "id": "zenfs_hp_head_graph_14",
     "type": "widget",
-    "label": "HEAD  ",
     "var": "bp_hp",
     "bodypart": "head",
-    "copy-from": "zenfs_hitpoint_graph_14"
+	"width": 14,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_torso_graph_alt",
+    "id": "zenfs_hp_torso_graph_14",
     "type": "widget",
-    "label": "TORSO ",
     "var": "bp_hp",
     "bodypart": "torso",
-    "copy-from": "zenfs_hitpoint_graph_14"
+	"width": 14,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_left_arm_graph_alt",
+    "id": "zenfs_hp_left_arm_graph_14",
     "type": "widget",
-    "label": "L.ARM ",
     "var": "bp_hp",
     "bodypart": "arm_l",
-    "copy-from": "zenfs_hitpoint_graph_14"
+	"width": 14,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_right_arm_graph_alt",
+    "id": "zenfs_hp_right_arm_graph_14",
     "type": "widget",
-    "label": "R.ARM ",
     "var": "bp_hp",
     "bodypart": "arm_r",
-    "copy-from": "zenfs_hitpoint_graph_14"
+	"width": 14,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_left_leg_graph_alt",
+    "id": "zenfs_hp_left_leg_graph_14",
     "type": "widget",
-    "label": "L.LEG ",
     "var": "bp_hp",
     "bodypart": "leg_l",
-    "copy-from": "zenfs_hitpoint_graph_14"
+	"width": 14,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
-    "id": "zenfs_hp_right_leg_graph_alt",
+    "id": "zenfs_hp_right_leg_graph_14",
     "type": "widget",
-    "label": "R.LEG ",
     "var": "bp_hp",
     "bodypart": "leg_r",
-    "copy-from": "zenfs_hitpoint_graph_14"
+	"width": 14,
+    "copy-from": "zenfs_hitpoint_graph"
   },
   {
 	"id": "zenfs_bp_head_text",
     "type": "widget",
 	"copy-from": "zenfs_bp_status_text",
     "bodypart": "head",
+	"width": 6,
     "label": "HEAD  "
   },
   {
@@ -181,6 +216,7 @@
     "type": "widget",
 	"copy-from": "zenfs_bp_status_text",
     "bodypart": "torso",
+	"width": 6,
     "label": "TORSO "
   },
   {
@@ -188,6 +224,7 @@
     "type": "widget",
 	"copy-from": "zenfs_bp_status_text",
     "bodypart": "arm_r",
+	"width": 6,
     "label": "L.ARM "
   },
   {
@@ -195,6 +232,7 @@
     "type": "widget",
 	"copy-from": "zenfs_bp_status_text",
     "bodypart": "arm_r",
+	"width": 6,
     "label": "R.ARM "
   },
   {
@@ -202,6 +240,7 @@
     "type": "widget",
 	"copy-from": "zenfs_bp_status_text",
     "bodypart": "leg_l",
+	"width": 6,
     "label": "L.LEG "
   },
   {
@@ -209,6 +248,16 @@
     "type": "widget",
 	"copy-from": "zenfs_bp_status_text",
     "bodypart": "leg_r",
+	"width": 6,
     "label": "R.LEG "
+  },
+  {
+    "id": "zenfs_hitpoint_graph",
+    "type": "widget",
+    "style": "graph",
+    "symbols": "·−=≡≣",
+    "fill": "bucket",
+    "colors": [ "c_red", "c_light_red", "c_yellow", "c_light_green", "c_green" ],
+    "flags": [ "W_NO_PADDING", "W_LABEL_NONE" ]
   }
 ]

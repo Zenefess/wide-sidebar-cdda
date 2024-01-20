@@ -45,6 +45,7 @@
     "type": "widget",
     "label": "<color_cyan>Count</color>",
     "var": "move",
+	"width": 8,
     "style": "number"
   },
   {
@@ -53,6 +54,6 @@
     "label": "<color_cyan>Cost</color>",
     "style": "number",
     "var": "move_cost",
-    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red", "c_red_red" ]
+    "colors": [ "c_green", "c_light_green", "c_yellow", "c_light_red", "c_red", "h_red" ]
   }
 ]

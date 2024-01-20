@@ -1,55 +1,17 @@
 [
   {
-    "id": "zenfs_wetness_graph",
+    "id": "zenfs_body_graph_wetness",
     "type": "widget",
-    "style": "graph",
-    "width": 1,
-    "symbols": "·−=≡≣",
-    "fill": "bucket",
-    "colors": [ "c_dark_gray", "c_blue", "c_light_blue", "c_cyan" ],
+    "style": "layout",
+    "arrange": "rows",
+    "widgets": [ "zenfs_body_graph_wetness_text", "zenfs_compact_body_graph_wet" ]
+  },
+  {
+    "id": "zenfs_body_graph_wetness_text",
+    "type": "widget",
+    "style": "text",
+    "string": " <color_white>Wetness</color>",
     "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_wetness_head",
-    "type": "widget",
-    "var": "bp_wetness",
-    "bodypart": "head",
-    "copy-from": "zenfs_wetness_graph"
-  },
-  {
-    "id": "zenfs_wetness_torso",
-    "type": "widget",
-    "var": "bp_wetness",
-    "bodypart": "torso",
-    "copy-from": "zenfs_wetness_graph"
-  },
-  {
-    "id": "zenfs_wetness_larm",
-    "type": "widget",
-    "var": "bp_wetness",
-    "bodypart": "arm_l",
-    "copy-from": "zenfs_wetness_graph"
-  },
-  {
-    "id": "zenfs_wetness_rarm",
-    "type": "widget",
-    "var": "bp_wetness",
-    "bodypart": "arm_r",
-    "copy-from": "zenfs_wetness_graph"
-  },
-  {
-    "id": "zenfs_wetness_lleg",
-    "type": "widget",
-    "var": "bp_wetness",
-    "bodypart": "leg_l",
-    "copy-from": "zenfs_wetness_graph"
-  },
-  {
-    "id": "zenfs_wetness_rleg",
-    "type": "widget",
-    "var": "bp_wetness",
-    "bodypart": "leg_r",
-    "copy-from": "zenfs_wetness_graph"
   },
   {
     "id": "zenfs_compact_body_graph_wet",
@@ -57,5 +19,62 @@
     "copy-from": "compact_body_graph_template",
     "label": "Body Graph (wetness)",
     "var": "body_graph_wet"
+  },
+  {
+    "id": "zenfs_wetness_graph",
+    "type": "widget",
+    "style": "graph",
+    "symbols": "·−=≡≣",
+    "fill": "bucket",
+    "colors": [ "c_blue", "c_light_blue", "c_cyan", "c_light_cyan", "h_light_cyan" ],
+    "flags": [ "W_LABEL_NONE", "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_wetness_head_graph_5",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "head",
+	"width": 5,
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_torso_graph_5",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "torso",
+	"width": 5,
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_left_arm_graph_5",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "arm_l",
+	"width": 5,
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_right_arm_graph_5",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "arm_r",
+	"width": 5,
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_left_leg_graph_5",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "leg_l",
+	"width": 5,
+    "copy-from": "zenfs_wetness_graph"
+  },
+  {
+    "id": "zenfs_wetness_right_leg_graph_5",
+    "type": "widget",
+    "var": "bp_wetness",
+    "bodypart": "leg_r",
+	"width": 5,
+    "copy-from": "zenfs_wetness_graph"
   }
 ]

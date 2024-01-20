@@ -33,77 +33,11 @@
     "widgets": [ "zenfs_body_graph_wetness", "zenfs_body_graph_temp", "zenfs_body_graph_encumb" ]
   },
   {
-    "id": "zenfs_body_graph_wetness",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "rows",
-    "widgets": [ "zenfs_body_graph_wetness_text", "zenfs_body_graph_wetness_layout" ]
-  },
-  {
-    "id": "zenfs_body_graph_temp",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "rows",
-    "widgets": [ "zenfs_body_graph_temp_text", "zenfs_body_graph_temp_layout" ]
-  },
-  {
-    "id": "zenfs_body_graph_encumb",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "rows",
-    "widgets": [ "zenfs_body_graph_encumb_text", "zenfs_body_graph_encumb_layout" ]
-  },
-  {
-    "id": "zenfs_body_graph_wetness_text",
-    "type": "widget",
-    "style": "text",
-    "string": " <color_white>Wetness</color>",
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_body_graph_temp_text",
-    "type": "widget",
-    "style": "text",
-    "string": "  <color_white>Temp.</color>",
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_body_graph_encumb_text",
-    "type": "widget",
-    "style": "text",
-    "string": " <color_white>Encumb.</color>",
-    "flags": [ "W_LABEL_NONE" ]
-  },
-  {
     "id": "zenfs_body_graph_layout",
     "type": "widget",
     "style": "layout",
     "width": 8,
     "arrange": "columns",
     "widgets": [ "compact_body_graph" ]
-  },
-  {
-    "id": "zenfs_body_graph_status_layout",
-    "type": "widget",
-    "copy-from": "zenfs_body_graph_layout",
-    "widgets": [ "compact_body_graph_status" ]
-  },
-  {
-    "id": "zenfs_body_graph_wetness_layout",
-    "type": "widget",
-    "copy-from": "zenfs_body_graph_layout",
-    "widgets": [ "zenfs_compact_body_graph_wet" ]
-  },
-  {
-    "id": "zenfs_body_graph_temp_layout",
-    "type": "widget",
-    "copy-from": "zenfs_body_graph_layout",
-    "widgets": [ "compact_body_graph_temp" ]
-  },
-  {
-    "id": "zenfs_body_graph_encumb_layout",
-    "type": "widget",
-    "copy-from": "zenfs_body_graph_layout",
-    "widgets": [ "compact_body_graph_encumb" ]
   }
 ]
