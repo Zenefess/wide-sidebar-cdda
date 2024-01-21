@@ -44,14 +44,14 @@
     "width": 0,
     "height": 4,
     "text_align": "left",
-	"separator": "<color_dark_gray>|/color> ",
+    "separator": "<color_dark_gray>|/color> ",
     "flags": [ "W_LABEL_NONE", "W_DYNAMIC_HEIGHT" ]
   },
   {
     "id": "zenfs_bp_top_armor",
     "type": "widget",
     "style": "layout",
-	"label": "Armor; top layer",
+    "label": "Armor; top layer",
     "description": "Shows top-most layer of currently worn <color_yellow>armor</color>.",
     "arrange": "minimum_columns",
     "padding": 2,
@@ -87,7 +87,7 @@
     "type": "widget",
     "style": "text",
     "text_align": "left",
-	"width": 0,
+    "width": 0,
     "var": "bp_armor_outer_text"
   },
   {
@@ -96,7 +96,7 @@
     "label": "<color_white>Head </color>",
     "bodypart": "head",
     "copy-from": "zenfs_bp_armor_template",
-	"flags": [ "W_LABEL_NONE" ]
+    "flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_bp_top_armor_arms",
@@ -104,7 +104,7 @@
     "label": "<color_white>Arms </color>",
     "bodypart": "arm_r",
     "copy-from": "zenfs_bp_armor_template",
-	"flags": [ "W_LABEL_NONE" ]
+    "flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_bp_top_armor_hands",
@@ -112,7 +112,7 @@
     "label": "<color_white>Hands </color>",
     "bodypart": "hand_r",
     "copy-from": "zenfs_bp_armor_template",
-	"flags": [ "W_LABEL_NONE" ]
+    "flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_bp_top_armor_torso",
@@ -120,7 +120,7 @@
     "label": "<color_white>Torso </color>",
     "bodypart": "torso",
     "copy-from": "zenfs_bp_armor_template",
-	"flags": [ "W_LABEL_NONE" ]
+    "flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_bp_top_armor_legs",
@@ -128,7 +128,7 @@
     "label": "<color_white>Legs </color>",
     "bodypart": "leg_r",
     "copy-from": "zenfs_bp_armor_template",
-	"flags": [ "W_LABEL_NONE" ]
+    "flags": [ "W_LABEL_NONE" ]
   },
   {
     "id": "zenfs_bp_top_armor_feet",
@@ -136,6 +136,6 @@
     "label": "<color_white>Feet </color>",
     "bodypart": "foot_r",
     "copy-from": "zenfs_bp_armor_template",
-	"flags": [ "W_LABEL_NONE" ]
+    "flags": [ "W_LABEL_NONE" ]
   }
 ]
