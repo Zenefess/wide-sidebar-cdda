@@ -23,6 +23,22 @@
     "flags": [ "W_LABEL_NONE" ]
   },
   {
+    "id": "zenfs_blank_line_10",
+    "type": "widget",
+    "style": "text",
+    "string": "          ",
+    "width": 10,
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_blank_line_12",
+    "type": "widget",
+    "style": "text",
+    "string": "            ",
+    "width": 12,
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
     "id": "zenfs_blank_space",
     "type": "widget",
     "style": "text",

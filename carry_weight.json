@@ -6,9 +6,15 @@
     "var": "carry_weight",
     "style": "graph",
     "label": "<color_dark_gray>CarryWt</color>",
-    "symbols": " −=≡≣",
+    "symbols": "·−=≡≣",
     "colors": [ "c_brown", "c_red", "c_light_red", "c_white_red" ],
     "breaks": [ 75, 100, 110 ]
+  },
+  {
+    "id": "zenfs_carry_weight_bar_9",
+    "type": "widget",
+    "copy-from": "zenfs_carry_weight_bar",
+    "width": 9
   },
   {
     "id": "zenfs_carry_weight_bar_12",
@@ -23,12 +29,34 @@
     "width": 14
   },
   {
-    "id": "zenfs_carry_weight_num",
+    "id": "zenfs_carry_weight_label",
     "type": "widget",
-    "label": "<color_dark_gray>Carry</color>",
+    "style": "text",
+    "string": "<color_dark_gray>Carry Wt </color>",
+    "width": 9,
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_carry_weight_num_no_label",
+    "type": "widget",
     "var": "carry_weight_text",
     "style": "text",
-    "text_align": "right",
+    "text_align": "left",
     "width": 4
+  },
+  {
+    "id": "zenfs_carry_weight_num",
+    "type": "widget",
+    "copy-from": "zenfs_carry_weight_bar",
+    "label": "<color_dark_gray>Carry</color>",
+    "text_align": "right"
+  },
+  {
+    "id": "zenfs_carry_weight_num_alt",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "width": 18,
+    "widgets": [ "zenfs_carry_weight_label", "zenfs_carry_weight_num_no_label", "zenfs_blank_space" ]
   }
 ]

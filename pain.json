@@ -1,10 +1,17 @@
 [
   {
+    "id": "zenfs_pain_bar_12",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "widgets": [ "zenfs_pain_bar_label_7", "zenfs_pain_bar_12_no_label" ]
+  },
+  {
     "id": "zenfs_pain_bar_14",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_pain_bar_label_5", "zenfs_pain_bar_14_no_label" ]
+    "widgets": [ "zenfs_pain_bar_label_7", "zenfs_pain_bar_14_no_label" ]
   },
   {
     "id": "zenfs_pain_bar_15",
@@ -12,6 +19,14 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "widgets": [ "zenfs_pain_bar_label_5", "zenfs_pain_bar_15_no_label" ],
+    "flags": [ "W_NO_PADDING" ]
+  },
+  {
+    "id": "zenfs_pain_bar_17",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "widgets": [ "zenfs_pain_bar_label_5", "zenfs_pain_bar_17_no_label" ],
     "flags": [ "W_NO_PADDING" ]
   },
   {
@@ -33,6 +48,12 @@
     "flags": [ "W_NO_LABEL" ]
   },
   {
+    "id": "zenfs_pain_bar_12_no_label",
+    "type": "widget",
+    "width": 12,
+    "copy-from": "zenfs_pain_bar_template"
+  },
+  {
     "id": "zenfs_pain_bar_14_no_label",
     "type": "widget",
     "width": 14,
@@ -42,6 +63,12 @@
     "id": "zenfs_pain_bar_15_no_label",
     "type": "widget",
     "width": 15,
+    "copy-from": "zenfs_pain_bar_template"
+  },
+  {
+    "id": "zenfs_pain_bar_17_no_label",
+    "type": "widget",
+    "width": 17,
     "copy-from": "zenfs_pain_bar_template"
   },
   {
@@ -55,42 +82,24 @@
     "flags": [ "W_NO_LABEL" ]
   },
   {
-    "//": "Can't autoswitch coloring until 'pain' is accessible.",
     "id": "zenfs_pain_bar_label",
     "type": "widget",
     "style": "text",
     "width": 4,
-    "clauses": [
-      {
-        "id": "label_normal",
-        "text": "Pain ",
-        "color": "c_magenta",
-        "condition": { "math": [ "u_val('fatigue')", "<", "1000000" ] }
-      },
-      {
-        "id": "label_tired",
-        "text": "Pain ",
-        "color": "c_pink",
-        "condition": { "and": [ { "math": [ "u_val('fatigue')", ">=", "1000000" ] }, { "math": [ "u_val('fatigue')", "<", "1000000" ] } ] }
-      },
-      {
-        "id": "label_very_tired",
-        "text": "Pain ",
-        "color": "c_light_red",
-        "condition": { "and": [ { "math": [ "u_val('fatigue')", ">=", "1000000" ] }, { "math": [ "u_val('fatigue')", "<", "1000000" ] } ] }
-      },
-      {
-        "id": "label_exhausted",
-        "text": "Pain ",
-        "color": "c_pink_red",
-        "condition": { "math": [ "u_val('fatigue')", ">=", "1000000" ] }
-      }
-    ]
+    "string": "<color_magenta>Pain</color>"
   },
   {
     "id": "zenfs_pain_bar_label_5",
     "type": "widget",
-    "copy-from": "zenfs_pain_bar_label",
-    "width": 5
+    "style": "text",
+    "width": 5,
+    "string": "<color_magenta>Pain</color> "
+  },
+  {
+    "id": "zenfs_pain_bar_label_7",
+    "type": "widget",
+    "style": "text",
+    "width": 7,
+    "string": "<color_magenta>Pain</color>   "
   }
 ]

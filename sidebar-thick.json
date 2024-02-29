@@ -15,7 +15,7 @@
     "label": "Meters; slim",
     "arrange": "rows",
     "description": "A slim <color_yellow>status display</color>, complete with <color_yellow>health</color>, <color_yellow>wetness</color>, <color_yellow>temperature</color> and <color_yellow>encumbrance meters</color> for all major body parts, as well as <color_yellow>diet</color>, <color_yellow>movement</color>, <color_yellow>mental</color> & <color_yellow>stats</color>.",
-    "widgets": [ "zenfs_hp_bars_and_stats_alt", "zenfs_blank_line", "zenfs_physical_block" ],
+    "widgets": [ "zenfs_hp_bars_and_stats_alt", "zenfs_nether_meter_wide", "zenfs_physical_block" ],
     "flags": [ "W_DISABLED_BY_DEFAULT" ]
   },
   {
@@ -34,7 +34,7 @@
     "label": "Numbers; slim",
     "arrange": "rows",
     "description": "A slim <color_yellow>status display</color>, complete with <color_yellow>health</color>, <color_yellow>wetness</color>, <color_yellow>temperature</color> and <color_yellow>encumbrance numbers</color> for all major body parts, as well as <color_yellow>diet</color>, <color_yellow>movement</color>, <color_yellow>mental</color> & <color_yellow>stats</color>.",
-    "widgets": [ "zenfs_hp_nums_and_stats_alt", "zenfs_blank_line", "zenfs_physical_num_block" ],
+    "widgets": [ "zenfs_hp_nums_and_stats_alt", "zenfs_nether_meter_wide_alt", "zenfs_physical_num_block" ],
     "flags": [ "W_DISABLED_BY_DEFAULT" ]
   },
   {
@@ -101,7 +101,7 @@
     "label": "Environment; slim",
     "description": "Shows all <color_yellow>weather</color> & <color_yellow>location</color> information, as well as a <color_yellow>safe mode</color> indicator.",
     "arrange": "rows",
-    "widgets": [ "zenfs_sun_with_moon", "zenfs_wind_light_weather_safe", "zenfs_date_time_temp_rad", "zenfs_place_omloc" ],
+    "widgets": [ "zenfs_sun_with_moon", "zenfs_wind_light_weather_safe", "zenfs_date_time_temp_rad", "zenfs_place_expedition_omloc" ],
     "flags": [ "W_DISABLED_BY_DEFAULT" ]
   },
   {
@@ -112,7 +112,12 @@
     "label": "Environment; slim",
     "description": "Shows all <color_yellow>weather</color> & <color_yellow>location</color> information, as well as a <color_yellow>safe mode</color> indicator.",
     "arrange": "rows",
-    "widgets": [ "zenfs_sun_with_moon_alt", "zenfs_wind_light_weather_safe_alt", "zenfs_date_time_temp_rad_alt", "zenfs_place_omloc" ],
+    "widgets": [
+      "zenfs_sun_with_moon_alt",
+      "zenfs_wind_light_weather_safe_alt",
+      "zenfs_date_time_temp_rad_alt",
+      "zenfs_place_expedition_omloc_alt"
+    ],
     "flags": [ "W_DISABLED_BY_DEFAULT" ]
   },
   {

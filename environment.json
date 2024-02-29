@@ -11,7 +11,7 @@
       "zenfs_lighting_date",
       "zenfs_weather_safe",
       "zenfs_env_temp_time_rad",
-      "zenfs_blank_line",
+      "zenfs_sky_island_expedition_timer_50",
       "zenfs_place_omloc"
     ]
   },
@@ -27,7 +27,7 @@
       "zenfs_lighting_date_alt",
       "zenfs_weather_safe",
       "zenfs_env_temp_time_rad_alt",
-      "zenfs_blank_line",
+      "zenfs_sky_island_expedition_timer_46",
       "zenfs_place_omloc_alt"
     ]
   },
@@ -183,7 +183,7 @@
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_date_15", "zenfs_time_11", "zenfs_env_temp_desc_16", "zenfs_rad_badge_desc" ]
+    "widgets": [ "zenfs_date_17", "zenfs_time_11", "zenfs_env_temp_desc_14", "zenfs_rad_badge_desc" ]
   },
   {
     "id": "zenfs_wind_light_weather_safe",
@@ -197,7 +197,7 @@
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_wind_desc_15", "zenfs_lighting_desc_11", "zenfs_weather_desc_17", "zenfs_safe_mode_right" ]
+    "widgets": [ "zenfs_wind_desc_17", "zenfs_lighting_desc_11", "zenfs_weather_desc_17", "zenfs_safe_mode_right" ]
   },
   {
     "id": "zenfs_wind_moon",
@@ -254,6 +254,21 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "widgets": [ "zenfs_place_desc_19", "zenfs_omloc_desc" ]
+  },
+  {
+    "id": "zenfs_place_expedition_omloc",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "widgets": [ "zenfs_place_desc", "zenfs_sky_island_expedition_timer", "zenfs_omloc_desc" ]
+  },
+  {
+    "id": "zenfs_place_expedition_omloc_alt",
+    "type": "widget",
+    "style": "layout",
+    "arrange": "minimum_columns",
+    "widgets": [ "zenfs_place_desc_15", "zenfs_sky_island_expedition_timer", "zenfs_omloc_desc_23" ],
+    "padding": 0
   },
   {
     "id": "zenfs_wind_desc_15",
@@ -319,10 +334,10 @@
     "widgets": [ "date_desc_no_label" ]
   },
   {
-    "id": "zenfs_date_15",
+    "id": "zenfs_date_17",
     "type": "widget",
     "copy-from": "zenfs_date",
-    "width": 15,
+    "width": 17,
     "flags": [ "W_LABEL_NONE" ]
   },
   {
@@ -361,6 +376,12 @@
     "widgets": [ "env_temp_desc_no_label" ]
   },
   {
+    "id": "zenfs_env_temp_desc_14",
+    "type": "widget",
+    "copy-from": "zenfs_env_temp_desc",
+    "width": 14
+  },
+  {
     "id": "zenfs_env_temp_desc_15",
     "type": "widget",
     "copy-from": "zenfs_env_temp_desc",
@@ -385,6 +406,12 @@
     "width": 0,
     "arrange": "columns",
     "widgets": [ "place_desc_no_label" ]
+  },
+  {
+    "id": "zenfs_place_desc_15",
+    "type": "widget",
+    "copy-from": "zenfs_place_desc",
+    "width": 15
   },
   {
     "id": "zenfs_place_desc_19",
@@ -417,6 +444,17 @@
     "label": "Location",
     "var": "overmap_loc_text",
     "style": "text",
+    "width": 24,
+    "text_align": "right",
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_omloc_desc_23",
+    "type": "widget",
+    "label": "Location",
+    "var": "overmap_loc_text",
+    "style": "text",
+    "width": 23,
     "text_align": "right",
     "flags": [ "W_LABEL_NONE" ]
   },
