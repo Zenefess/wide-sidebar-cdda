@@ -4,8 +4,7 @@
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_blood_label", "zenfs_blood_level" ],
-    "padding": 0
+    "widgets": [ "zenfs_blood_label", "zenfs_blood_level" ]
   },
   {
     "id": "zenfs_blood_B",
@@ -23,7 +22,9 @@
     "clauses": [
       { "id": "not_infected", "text": "     ", "color": "black", "condition": { "not": { "u_has_effect": "vampire_virus" } } },
       { "id": "slumber", "text": "Blood", "color": "light_gray", "condition": { "u_has_effect": "vampire_virus" } }
-    ]
+    ],
+    "padding": 0,
+    "flags": [ "W_NO_PADDING" ]
   },
   {
     "id": "zenfs_blood_label_B",
@@ -33,7 +34,9 @@
     "clauses": [
       { "id": "not_infected", "text": " ", "color": "black", "condition": { "not": { "u_has_effect": "vampire_virus" } } },
       { "id": "slumber", "text": "B", "color": "light_gray", "condition": { "u_has_effect": "vampire_virus" } }
-    ]
+    ],
+    "padding": 0,
+    "flags": [ "W_NO_PADDING" ]
   },
   {
     "id": "zenfs_blood_level",
@@ -133,6 +136,7 @@
         "condition": { "and": [ { "u_has_effect": "vampire_virus" }, { "math": [ "u_vitamin('human_blood_vitamin')", ">", "4401" ] } ] }
       }
     ],
+    "padding": 0,
     "flags": [ "W_LABEL_NONE" ]
   }
 ]

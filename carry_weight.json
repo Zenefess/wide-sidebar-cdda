@@ -11,24 +11,6 @@
     "breaks": [ 75, 100, 110 ]
   },
   {
-    "id": "zenfs_carry_weight_bar_9",
-    "type": "widget",
-    "copy-from": "zenfs_carry_weight_bar",
-    "width": 9
-  },
-  {
-    "id": "zenfs_carry_weight_bar_12",
-    "type": "widget",
-    "copy-from": "zenfs_carry_weight_bar",
-    "width": 12
-  },
-  {
-    "id": "zenfs_carry_weight_bar_14",
-    "type": "widget",
-    "copy-from": "zenfs_carry_weight_bar",
-    "width": 14
-  },
-  {
     "id": "zenfs_carry_weight_label",
     "type": "widget",
     "style": "text",
@@ -43,13 +25,6 @@
     "style": "text",
     "text_align": "left",
     "width": 4
-  },
-  {
-    "id": "zenfs_carry_weight_num",
-    "type": "widget",
-    "copy-from": "zenfs_carry_weight_bar",
-    "label": "<color_dark_gray>Carry</color>",
-    "text_align": "right"
   },
   {
     "id": "zenfs_carry_weight_num_alt",

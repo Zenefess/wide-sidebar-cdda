@@ -46,25 +46,9 @@
     ]
   },
   {
-    "id": "zenfs_activity_desc_no_label",
-    "type": "widget",
-    "copy-from": "zenfs_activity_desc",
-    "label": "",
-    "flags": [ "W_NO_LABEL", "W_NO_PADDING" ]
-  },
-  {
     "id": "zenfs_activity_desc_A",
     "type": "widget",
     "copy-from": "zenfs_activity_desc",
     "label": "A"
-  },
-  {
-    "id": "zenfs_activity_desc_no_label_12",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "width": 12,
-    "widgets": [ "zenfs_spacer", "zenfs_activity_desc_no_label", "zenfs_spacer" ],
-    "padding": 0
   }
 ]

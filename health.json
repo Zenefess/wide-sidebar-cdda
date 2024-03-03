@@ -56,14 +56,16 @@
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_fatigue_bar_label", "zenfs_fatigue_desc_no_label" ]
+    "widgets": [ "zenfs_fatigue_bar_label", "zenfs_fatigue_desc_no_label" ],
+    "padding": 0
   },
   {
     "id": "zenfs_fatigue_desc_F",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
-    "widgets": [ "zenfs_fatigue_label_F", "zenfs_fatigue_desc_no_label" ]
+    "widgets": [ "zenfs_fatigue_label_F", "zenfs_fatigue_desc_no_label" ],
+    "padding": 0
   },
   {
     "id": "zenfs_fatigue_num",
@@ -96,7 +98,6 @@
     "padding": 0
   },
   {
-    "//": "Remove 'i_red' when stamina label math is complete.",
     "id": "zenfs_stamina_bar_template",
     "type": "widget",
     "copy-from": "stamina_widget",
@@ -190,6 +191,7 @@
     "type": "widget",
     "style": "text",
     "text_align": "right",
+    "width": 11,
     "clauses": [
       {
         "id": "well_rested",
@@ -221,7 +223,8 @@
         "color": "red",
         "condition": { "math": [ "u_val('fatigue')", ">=", "575" ] }
       }
-    ]
+    ],
+    "padding": 0
   },
   {
     "id": "zenfs_stamina_bar_label",
@@ -242,7 +245,9 @@
     "type": "widget",
     "style": "text",
     "string": "F",
-    "width": 1
+    "width": 1,
+    "padding": 0,
+    "flags": [ "W_NO_PADDING" ]
   },
   {
     "id": "zenfs_fatigue_bar_label",

@@ -1,32 +1,10 @@
 [
   {
-    "id": "zenfs_pain_bar_12",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "widgets": [ "zenfs_pain_bar_label_7", "zenfs_pain_bar_12_no_label" ]
-  },
-  {
-    "id": "zenfs_pain_bar_14",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "widgets": [ "zenfs_pain_bar_label_7", "zenfs_pain_bar_14_no_label" ]
-  },
-  {
     "id": "zenfs_pain_bar_15",
     "type": "widget",
     "style": "layout",
     "arrange": "minimum_columns",
     "widgets": [ "zenfs_pain_bar_label_5", "zenfs_pain_bar_15_no_label" ],
-    "flags": [ "W_NO_PADDING" ]
-  },
-  {
-    "id": "zenfs_pain_bar_17",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "widgets": [ "zenfs_pain_bar_label_5", "zenfs_pain_bar_17_no_label" ],
     "flags": [ "W_NO_PADDING" ]
   },
   {
@@ -37,27 +15,14 @@
     "widgets": [ "zenfs_pain_bar_label_5", "zenfs_pain_num_no_label" ]
   },
   {
-    "//": "Remove 'i_red' when stamina label math is complete.",
     "id": "zenfs_pain_bar_template",
     "type": "widget",
     "var": "pain",
     "style": "graph",
     "fill": "bucket",
     "symbols": "·−=≡≣",
-    "colors": [ "c_green", "c_yellow", "c_light_red", "c_red" ],
+    "colors": [ "c_green", "c_yellow", "c_light_red", "c_red", "i_red" ],
     "flags": [ "W_NO_LABEL" ]
-  },
-  {
-    "id": "zenfs_pain_bar_12_no_label",
-    "type": "widget",
-    "width": 12,
-    "copy-from": "zenfs_pain_bar_template"
-  },
-  {
-    "id": "zenfs_pain_bar_14_no_label",
-    "type": "widget",
-    "width": 14,
-    "copy-from": "zenfs_pain_bar_template"
   },
   {
     "id": "zenfs_pain_bar_15_no_label",
@@ -66,27 +31,14 @@
     "copy-from": "zenfs_pain_bar_template"
   },
   {
-    "id": "zenfs_pain_bar_17_no_label",
-    "type": "widget",
-    "width": 17,
-    "copy-from": "zenfs_pain_bar_template"
-  },
-  {
     "id": "zenfs_pain_num_no_label",
     "type": "widget",
     "var": "pain",
     "style": "number",
     "width": 3,
-    "colors": [ "c_white", "c_yellow", "c_light_red", "c_red" ],
+    "colors": [ "c_white", "c_yellow", "c_light_red", "c_red", "i_red" ],
     "text_align": "right",
     "flags": [ "W_NO_LABEL" ]
-  },
-  {
-    "id": "zenfs_pain_bar_label",
-    "type": "widget",
-    "style": "text",
-    "width": 4,
-    "string": "<color_magenta>Pain</color>"
   },
   {
     "id": "zenfs_pain_bar_label_5",
@@ -94,12 +46,5 @@
     "style": "text",
     "width": 5,
     "string": "<color_magenta>Pain</color> "
-  },
-  {
-    "id": "zenfs_pain_bar_label_7",
-    "type": "widget",
-    "style": "text",
-    "width": 7,
-    "string": "<color_magenta>Pain</color>   "
   }
 ]

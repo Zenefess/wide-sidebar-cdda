@@ -23,6 +23,14 @@
     "flags": [ "W_LABEL_NONE" ]
   },
   {
+    "id": "zenfs_blank_space",
+    "type": "widget",
+    "style": "text",
+    "string": " ",
+    "flags": [ "W_LABEL_NONE" ],
+    "padding": 1
+  },
+  {
     "id": "zenfs_blank_line_10",
     "type": "widget",
     "style": "text",
@@ -37,13 +45,5 @@
     "string": "            ",
     "width": 12,
     "flags": [ "W_LABEL_NONE" ]
-  },
-  {
-    "id": "zenfs_blank_space",
-    "type": "widget",
-    "style": "text",
-    "string": " ",
-    "flags": [ "W_LABEL_NONE" ],
-    "padding": 1
   }
 ]

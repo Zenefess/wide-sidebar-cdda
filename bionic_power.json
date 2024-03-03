@@ -16,14 +16,6 @@
     "flags": [ "W_NO_PADDING" ]
   },
   {
-    "id": "zenfs_bionic_bar_16_with_balance",
-    "type": "widget",
-    "style": "layout",
-    "arrange": "minimum_columns",
-    "widgets": [ "zenfs_bionicpower_label", "zenfs_bionicbalance_sym", "zenfs_bionicpower_bar_16_no_label" ],
-    "flags": [ "W_NO_PADDING" ]
-  },
-  {
     "id": "zenfs_bionic_num_with_balance",
     "type": "widget",
     "style": "layout",
@@ -51,17 +43,11 @@
     "width": 15
   },
   {
-    "id": "zenfs_bionicpower_bar_16_no_label",
-    "type": "widget",
-    "copy-from": "zenfs_bionicpower_bar_14_no_label",
-    "width": 16
-  },
-  {
     "id": "zenfs_bionicpower_num_no_label",
     "type": "widget",
     "style": "text",
     "var": "power_text",
-    "width": 6,
+    "width": 7,
     "text_align": "right",
     "colors": [ "c_light_blue" ],
     "flags": [ "W_NO_LABEL", "W_DISABLED_WHEN_EMPTY" ]

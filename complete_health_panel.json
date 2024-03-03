@@ -40,7 +40,7 @@
     "style": "layout",
     "arrange": "minimum_columns",
     "widgets": [ "zenfs_num_malus_weariness_power", "zenfs_num_stamina_pain_mana", "zenfs_num_activity_fatigue_blood" ],
-    "padding": 4
+    "padding": 3
   },
   {
     "id": "zenfs_hp_bars_and_physical",
@@ -53,7 +53,7 @@
       "zenfs_blank_line",
       "zenfs_health_stack_20",
       "zenfs_blood",
-      "zenfs_mana_bar_14_alt",
+      "zenfs_mana_bar_14",
       "zenfs_bionic_bar_14_with_balance"
     ]
   },
@@ -76,8 +76,8 @@
       "zenfs_blank_line",
       "zenfs_health_stack_num",
       "zenfs_blood_B",
-      "zenfs_bionic_num_with_balance",
-      "zenfs_mana_num"
+      "zenfs_mana_num_with_max_alt",
+      "zenfs_bionic_num_with_balance"
     ]
   },
   {
@@ -202,7 +202,8 @@
     "style": "layout",
     "arrange": "rows",
     "width": 29,
-    "widgets": [ "zenfs_body_graphs_narrow", "zenfs_nether_meter", "zenfs_diet_stats_movement" ]
+    "widgets": [ "zenfs_body_graphs_narrow", "zenfs_nether_meter", "zenfs_diet_stats_movement" ],
+    "padding": 1
   },
   {
     "id": "zenfs_diet_stats_movement",
@@ -273,8 +274,8 @@
     "type": "widget",
     "style": "layout",
     "arrange": "rows",
-    "width": 13,
-    "widgets": [ "zenfs_stamina_num", "zenfs_pain_num", "zenfs_mana_num" ]
+    "width": 15,
+    "widgets": [ "zenfs_stamina_num", "zenfs_pain_num", "zenfs_mana_num_with_max" ]
   },
   {
     "id": "zenfs_num_activity_fatigue_blood",
@@ -282,7 +283,8 @@
     "style": "layout",
     "arrange": "rows",
     "width": 19,
-    "widgets": [ "zenfs_activity_desc", "zenfs_fatigue_desc", "zenfs_blood" ]
+    "widgets": [ "zenfs_activity_desc", "zenfs_fatigue_desc", "zenfs_blood" ],
+    "padding": 0
   },
   {
     "id": "zenfs_stat_block",
